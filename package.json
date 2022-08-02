@@ -1,5 +1,5 @@
 {
-  "name": "dodao-aave-guides",
+  "name": "dodao-",
   "version": "1.0.0",
   "description": "Guides explaining AAVE Protocol",
   "scripts": {
@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DoDAO-io/dodao-aave-guides.git"
+    "url": "git+https://github.com/DoDAO-io/dodao-.git"
   },
   "author": "robin",
   "bugs": {
-    "url": "https://github.com/DoDAO-io/dodao-aave-guides/issues"
+    "url": "https://github.com/DoDAO-io/dodao-/issues"
   },
-  "homepage": "https://github.com/DoDAO-io/dodao-aave-guides#readme",
+  "homepage": "https://github.com/DoDAO-io/dodao-#readme",
   "dependencies": {
     "dodao-guides-processor": "0.1.2"
   }
