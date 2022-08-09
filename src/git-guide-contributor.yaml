@@ -5,7 +5,7 @@ categories:
 content: Explains writing git bases guide
 created: '2022-08-09T01:19:51.168Z'
 guideType: onboarding
-key: write-a-git-guide
+key: git-guide-contributor
 name: Write a Git Guide
 showIncorrectOnCompletion: true
 publishStatus: Live

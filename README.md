@@ -7,7 +7,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
 | S.No        | Title       |  Details  |  Link  |
 | ----------- | ----------- |----------- | ----------- |
-| 1      | Write a Git Guide | Explains writing git bases guide |  [Link](generated/markdown/write-a-git-guide.md) |
+| 1      | Write a Git Guide | Explains writing git bases guide |  [Link](generated/markdown/git-guide-contributor.md) |
 
 ---
 ## Footer
