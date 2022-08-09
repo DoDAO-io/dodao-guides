@@ -118,14 +118,11 @@ steps:
          ```yaml
            - uuid: bd8f0b48-4e61-478a-b275-68e3c93db760
              content: |
-             Currently contributing to courses involves working on a chapter which
-             has \"two\" tasks
-               1. Readings and Summaries - Create yaml file with details of readings and summaries for that chapter. e.g. [https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml](https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml)
-               2. Questions - Create 50 high quality single or multiple choice questions for the  chapter you are working on. e.g. [https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/questions/data_types.yaml](https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/questions/data_types.yaml). Later
-                  on we will add another task i.e. creating of the mind maps for each chapter, but
-                  for now its not needed. Also make sure that your name is added on a Trello card corresponding to the task you are working on.
-                  stepItems: []
-                  name: Contributing
+               We have two ways of writing the guides
+                1. Through the UI
+                2. Through Git
+             stepItems: []
+             name: Contributing
          ```
          Steps consist of following information
          1) UUID - unique identifier. You can use this site to generate a V4 uuid https://www.uuidgenerator.net/version4
