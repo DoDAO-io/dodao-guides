@@ -5,6 +5,11 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
 ## Guides
 
-| S.No        | Title       |  Link  |
-| ----------- | ----------- |----------- |
-| 1      | course-contributor |  [Link](generated/markdown/course-contributor.md) | 
+| S.No        | Title       |  Details  |  Link  |
+| ----------- | ----------- |----------- | ----------- |
+| 1      | Write a Git Guide | Explains writing git bases guide |  [Link](generated/markdown/write-a-git-guide.md) |
+
+---
+## Footer
+This is the git footer. This will be added on top of every page. Go to [DoDAO.io](https://www.dodao.io) to know more.
+ 

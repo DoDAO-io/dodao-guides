@@ -1,0 +1,222 @@
+{
+  "categories": [
+    "developer",
+    "engineering"
+  ],
+  "content": "Explains writing git bases guide",
+  "created": "2022-08-09T01:19:51.168Z",
+  "guideType": "onboarding",
+  "key": "write-a-git-guide",
+  "name": "Write a Git Guide",
+  "showIncorrectOnCompletion": true,
+  "publishStatus": "Live",
+  "socialShareImage": null,
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "uuid": "edae8e5e-2be6-4043-8756-a10e4933762c",
+  "steps": [
+    {
+      "content": "We have two ways of writing the guides\n1. Through the UI\n2. Through Git\n\nGit options provides a couple of benefits\n1. Review's can be done via PRs\n2. People across the project can for the repository and contribute\n3. Content is backed-up\n4. Content is Open Source and can be used by everyone\n",
+      "stepItems": [],
+      "name": "Why another course?",
+      "uuid": "28ecec15-4497-4658-8ac6-8c02a500090a"
+    },
+    {
+      "content": "",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "A",
+            "B",
+            "D"
+          ],
+          "choices": [
+            {
+              "content": "People across the project can for the repository and contribute",
+              "key": "A"
+            },
+            {
+              "content": "Review's can be done via PRs",
+              "key": "B"
+            },
+            {
+              "content": "Git based guides have more features as compared to UI based guides",
+              "key": "C"
+            },
+            {
+              "content": "Content is Open Source and can be used by everyone",
+              "key": "D"
+            }
+          ],
+          "content": "Why do we write git based guides instead of using the UI option?",
+          "type": "MultipleChoice",
+          "uuid": "a3f779f5-8420-4ec1-91eb-0cf17ddeeb2a"
+        }
+      ],
+      "name": "Evaluation",
+      "uuid": "ac782028-5570-4ee2-8e4e-cd68882010ff"
+    },
+    {
+      "content": "When adding a new guide you will have to add a new YAML file in `src` directory.\n\nWe then need to add the entry of that file in `guides.yaml` file. \n\ne.g. see this repository [https://github.com/DoDAO-io/dodao-aave-guides](https://github.com/DoDAO-io/dodao-aave-guides)\n\nWe add guide files in yaml format. The reason we use YAML format is because it is easier to write a YAML as compared to JSON. Also, YAML provides easy way to work with multi-line strings.\n\nWith-in the course YAML files, we have content field for step and stepItems. This field can contain multi-line strings. The contents of these multi-line strings can be in Markdown format.\n\nIf you are willing to contribute, it is very important that you understand the basics of YAML and Markdown format\n\n## Learn YAML\nYou can go through these tutorials or watch any of the youtube videos on YAML\n\n[https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)\n\n[https://www.tutorialspoint.com/yaml/index.htm](https://www.tutorialspoint.com/yaml/index.htm)\n\n## Learn Markdown\nYou can go through these articles or watch any of the youtube videos on Markdown\n\n[https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)\n\n## Setup\nUse a proper IDE that can validate yaml file and also that shows markdown in view format.\n",
+      "stepItems": [],
+      "name": "Guide Files",
+      "uuid": "196a8b34-e8cd-4ca7-9b65-6444fac37156"
+    },
+    {
+      "content": "",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "B"
+          ],
+          "choices": [
+            {
+              "content": "We just use YAML format",
+              "key": "A"
+            },
+            {
+              "content": "File is on YAML format and the some of the fields can be represented as multi-line Markdown string",
+              "key": "B"
+            },
+            {
+              "content": "Files are in JSON format",
+              "key": "C"
+            },
+            {
+              "content": "File is in Markdown format and the some of the fields can be represented as multi-line YAML string",
+              "key": "D"
+            }
+          ],
+          "content": "What markup language/s do we use for writing course files?",
+          "type": "SingleChoice",
+          "uuid": "737bf699-8a4c-42f4-b3db-4bdaefd310cd"
+        },
+        {
+          "answerKeys": [
+            "D"
+          ],
+          "choices": [
+            {
+              "content": "YAML files are auto validated",
+              "key": "A"
+            },
+            {
+              "content": "YAML is easy to use in JavaScript",
+              "key": "B"
+            },
+            {
+              "content": "YAML is easier to learn than JSON",
+              "key": "C"
+            },
+            {
+              "content": "It is easier to represent multi-line strings in YAML format",
+              "key": "D"
+            }
+          ],
+          "content": "What is the main reason to use YAML files for course files?",
+          "type": "SingleChoice",
+          "uuid": "029b80d4-a5a8-44e8-ac8d-a883e3637079"
+        }
+      ],
+      "name": "Evaluation",
+      "uuid": "e7db8297-dd7f-4600-9b4c-86a2dd740562"
+    },
+    {
+      "content": "A Guide consists of following things\n1) Basic Info - This includes name, excerpt, thumbnail,  etc.\n2) Steps - Here is the example of the step\n   ```yaml\n     - uuid: bd8f0b48-4e61-478a-b275-68e3c93db760\n       content: |\n       Currently contributing to courses involves working on a chapter which\n       has \\\"two\\\" tasks\n         1. Readings and Summaries - Create yaml file with details of readings and summaries for that chapter. e.g. [https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml](https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/summaries/data_types.yaml)\n         2. Questions - Create 50 high quality single or multiple choice questions for the  chapter you are working on. e.g. [https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/questions/data_types.yaml](https://github.com/DoDAO-io/dodao-solidity-course/blob/main/src/questions/data_types.yaml). Later\n            on we will add another task i.e. creating of the mind maps for each chapter, but\n            for now its not needed. Also make sure that your name is added on a Trello card corresponding to the task you are working on.\n            stepItems: []\n            name: Contributing\n   ```\n   Steps consist of following information\n   1) UUID - unique identifier. You can use this site to generate a V4 uuid https://www.uuidgenerator.net/version4\n   2) Name\n   3) Content - Details that are rendered below the headings. This is a string formatted with markdown\n   4) StepItems - Step items can be of the following types\n      1) Question - Type of question can be `MultipleChoice` or `SingleChoice`\n            ```yaml\n               - uuid: f12c2758-858d-4fe4-9560-f4dd9454f89a\n                 content: What two tasks are currently part of the work involved for a chapter\n                 of a course?\n                 type: MultipleChoice\n                 answerKeys:\n                 - B\n                 - C\n                 choices:\n                 - content: Create a youtube video\n                   key: A\n                 - content: Create yaml file with readings and summaries\n                   key: B\n                 - content: Create yaml file for questions\n                   key: C\n                 - content: Create a mind map\n                   key: D\n            ```\n      2) UserInput - This is used to capture information from user. Type can be `PublicShortInput` or `PrivateShortInput` e.g.\n            ```yaml\n                    - uuid: 5e025ae8-daf2-4074-8e6c-68de05d3e5cc\n                      label: Name\n                      required: true\n                      type: PublicShortInput\n            ```\n      3) Discord - This step item is used to ask user to connect their discord. e.g.\n        ```yaml\n           - uuid: 0d3bf837-e661-43b3-ba85-6d2ebb272be5\n             type: UserDiscordConnect\n        ```\n\n## Creating/Updating a Guide\nWhen creating or editing a guide, create a new branch and after you are done with editing the guide create a PR\n",
+      "stepItems": [],
+      "name": "Guide contents",
+      "uuid": "3eff00c5-7b99-4100-ad6e-5ad9c900c739"
+    },
+    {
+      "content": "",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "B"
+          ],
+          "choices": [
+            {
+              "content": "content",
+              "key": "A"
+            },
+            {
+              "content": "explanation",
+              "key": "B"
+            },
+            {
+              "content": "uuid",
+              "key": "C"
+            },
+            {
+              "content": "stepItems",
+              "key": "D"
+            },
+            {
+              "content": "name",
+              "key": "E"
+            }
+          ],
+          "content": "Which one of these is not present under a step",
+          "type": "SingleChoice",
+          "uuid": "cb0354df-d99b-41fe-af19-ca9dec950367"
+        },
+        {
+          "answerKeys": [
+            "D"
+          ],
+          "choices": [
+            {
+              "content": "Question",
+              "key": "A"
+            },
+            {
+              "content": "UserInput",
+              "key": "B"
+            },
+            {
+              "content": "Discord",
+              "key": "C"
+            },
+            {
+              "content": "Telegram",
+              "key": "D"
+            }
+          ],
+          "content": "Which one of these is not a type of step item",
+          "type": "SingleChoice",
+          "uuid": "6c7ddc09-1e0a-4528-ab65-313a9e13378e"
+        }
+      ],
+      "name": "Evaluation",
+      "uuid": "d259a962-b739-4df7-810e-51e6c807422f"
+    },
+    {
+      "content": "Create an account on Trello as we use that for task management [https://trello.com](https://trello.com)",
+      "stepItems": [
+        {
+          "uuid": "5e025ae8-daf2-4074-8e6c-68de05d3e5cc",
+          "label": "Name",
+          "required": true,
+          "type": "PublicShortInput"
+        },
+        {
+          "uuid": "0de9f39c-acb1-4835-8f8c-75ba0e22ffad",
+          "label": "Trello Username",
+          "required": true,
+          "type": "PublicShortInput"
+        },
+        {
+          "uuid": "54f694d3-da65-4137-83a1-c8ae2e6b0e16",
+          "label": "Github Username",
+          "required": true,
+          "type": "PublicShortInput"
+        },
+        {
+          "uuid": "0d3bf837-e661-43b3-ba85-6d2ebb272be5",
+          "type": "UserDiscordConnect"
+        }
+      ],
+      "name": "Your Info",
+      "uuid": "4ea13235-65e1-4169-aeb8-a28bf7306716"
+    }
+  ]
+}
