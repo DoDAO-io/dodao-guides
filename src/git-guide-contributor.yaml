@@ -163,6 +163,7 @@ steps:
       
       ## Creating/Updating a Guide
       When creating or editing a guide, create a new branch and after you are done with editing the guide create a PR
+      step 1 is to create a branch in the github.
     stepItems: []
     name: Guide contents
     uuid: 3eff00c5-7b99-4100-ad6e-5ad9c900c739
