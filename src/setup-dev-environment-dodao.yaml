@@ -1,0 +1,39 @@
+categories:
+  - developer
+content: 'Setup you need to have to contribute to the guides & courses '
+created: '2022-11-01T12:38:12.446Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: onboarding
+key: setup-dev-environment-dodao
+name: Setup Dev Environment
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: >+
+      In DoDAO we primarily write three type of contents
+
+      1. Guides
+
+      2. Courses
+
+      3. Articles
+
+
+      ## Contributing to guides and courses
+
+      The preferred way of contributing towards creating or updating guides or
+      courses is by editing the files in git repositories and then creating a
+      pull request for reviews
+
+
+    name: Introduction
+    stepItems: []
+    uuid: aebdc966-5f62-4668-899c-9725c828741d
+  - content: ''
+    name: Introduction Evaluation
+    stepItems: []
+    uuid: ab430e9e-fca3-4961-9f38-081c5bcd960a
+thumbnail: >-
+  https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi
+uuid: 92ffd1cc-fda7-4656-883b-f347bb84a9b3
