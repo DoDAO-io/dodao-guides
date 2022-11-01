@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T14:55:28.162Z'
+created: '2022-11-01T14:57:01.782Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -102,42 +102,94 @@ steps:
     name: Guide Repo Structure
     stepItems: []
     uuid: 605385c5-b709-4170-b429-40604557717c
-  - content: |-
+  - content: >
       ```
+
       .
+
       |--- LICENSE
+
       |--- README.md
+
       |--- aa.txt
+
       |--- generated
+
       |   |--- course.json
+
       |   |--- explanations
+
       |   |      |--- aave-smart-contracts.md
+
       |   |--- questions
+
       |   |      |--- aave-smart-contracts.md
+
       |   |--- readings
+
       |   |      |--- aave-smart-contracts.md
+
       |   |--- summaries
+
       |   |      |--- aave-smart-contracts.md
+
       |   |--- topics
+
       |          |--- aave-smart-contracts.md
+
       |--- images
+
       |   |--- aave.jpg
+
       |   |--- architechture.png
+
       |--- package-lock.json
+
       |--- package.json
+
       |--- src
+
       |   |--- course-header.md
+
       |   |--- course.yaml
+
       |   |--- explanations
+
       |   |      |--- aave-smart-contracts.yaml
+
       |   |--- questions
+
       |   |      |--- aave-smart-contracts.yaml
+
       |   |--- readings
+
       |   |      |--- aave-smart-contracts.yaml
+
       |   |--- summaries
+
       |          |--- aave-smart-contracts.yaml
+
       |--- yarn.lock
+
       ```
+
+
+      Important things to keep in mind are 
+
+      1. All the content to be added or updated needs to be written in `yaml`
+      files i.e. under `src` directory
+
+      2. All the files under `generated` directory are the files generated from
+      the yaml files after we run `yarn test`
+
+      3. `generated/course.json` is used by the app to render the course in the
+      browser
+
+      4. Files under `generated` folder can be used by you to check the
+      formatting of the content
+
+      5. Before you create a pull request, make sure to run `yarn test` and also
+      checkin the generated files.
     name: Course Repo Structure
     stepItems: []
     uuid: e8951921-87e4-444c-b199-820e9012241a

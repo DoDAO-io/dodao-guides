@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-11-01T14:55:28.162Z",
+  "created": "2022-11-01T14:57:01.782Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -32,7 +32,7 @@
       "uuid": "605385c5-b709-4170-b429-40604557717c"
     },
     {
-      "content": "```\n.\n|--- LICENSE\n|--- README.md\n|--- aa.txt\n|--- generated\n|   |--- course.json\n|   |--- explanations\n|   |      |--- aave-smart-contracts.md\n|   |--- questions\n|   |      |--- aave-smart-contracts.md\n|   |--- readings\n|   |      |--- aave-smart-contracts.md\n|   |--- summaries\n|   |      |--- aave-smart-contracts.md\n|   |--- topics\n|          |--- aave-smart-contracts.md\n|--- images\n|   |--- aave.jpg\n|   |--- architechture.png\n|--- package-lock.json\n|--- package.json\n|--- src\n|   |--- course-header.md\n|   |--- course.yaml\n|   |--- explanations\n|   |      |--- aave-smart-contracts.yaml\n|   |--- questions\n|   |      |--- aave-smart-contracts.yaml\n|   |--- readings\n|   |      |--- aave-smart-contracts.yaml\n|   |--- summaries\n|          |--- aave-smart-contracts.yaml\n|--- yarn.lock\n```",
+      "content": "```\n.\n|--- LICENSE\n|--- README.md\n|--- aa.txt\n|--- generated\n|   |--- course.json\n|   |--- explanations\n|   |      |--- aave-smart-contracts.md\n|   |--- questions\n|   |      |--- aave-smart-contracts.md\n|   |--- readings\n|   |      |--- aave-smart-contracts.md\n|   |--- summaries\n|   |      |--- aave-smart-contracts.md\n|   |--- topics\n|          |--- aave-smart-contracts.md\n|--- images\n|   |--- aave.jpg\n|   |--- architechture.png\n|--- package-lock.json\n|--- package.json\n|--- src\n|   |--- course-header.md\n|   |--- course.yaml\n|   |--- explanations\n|   |      |--- aave-smart-contracts.yaml\n|   |--- questions\n|   |      |--- aave-smart-contracts.yaml\n|   |--- readings\n|   |      |--- aave-smart-contracts.yaml\n|   |--- summaries\n|          |--- aave-smart-contracts.yaml\n|--- yarn.lock\n```\n\nImportant things to keep in mind are \n1. All the content to be added or updated needs to be written in `yaml` files i.e. under `src` directory\n2. All the files under `generated` directory are the files generated from the yaml files after we run `yarn test`\n3. `generated/course.json` is used by the app to render the course in the browser\n4. Files under `generated` folder can be used by you to check the formatting of the content\n5. Before you create a pull request, make sure to run `yarn test` and also checkin the generated files.\n",
       "name": "Course Repo Structure",
       "stepItems": [],
       "uuid": "e8951921-87e4-444c-b199-820e9012241a"
