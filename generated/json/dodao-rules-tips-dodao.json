@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "New Guide",
-  "created": "2022-11-01T12:53:17.976Z",
+  "created": "2022-11-01T12:55:27.336Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -18,12 +18,12 @@
       "uuid": "ea302528-84e3-4355-a2c1-5e5a6f7e29eb"
     },
     {
-      "content": "### Content Rewrite\nAs a smart tech-team, we want to spend most of our time understanding the topics rather than writing in English. So a smart way to understand a topic is to read and extract the most important information from it. \n\nYou can then use an english rewrite tool like [https://app.peppertype.ai/create/content-rewriter](https://app.peppertype.ai/create/content-rewriter) to rewrite the content for you. These tools are 50-70% accurate, so you will have to pay attention on what this tool outputs.      \n\nAfter a strong understanding of the chosen topic, you will be able to write a guide or an article using these tools within 2-4 hours.\n\n### Pick Easy Tasks\nWe always need more content, and sometimes the topics can be difficult or outside of your area of expertise. \n\nIf you find yourself in this situation, please let us know and we will assign you a different topic. This will help save you and the reviewer time, and more importantly maintain a good working relationship.\n\n### Referral Rewards\n\n\n### Choose Verticals \n",
+      "content": "### Content Rewrite\nAs a smart tech-team, we want to spend most of our time understanding the topics rather than writing in English. So a smart way to write an article or guide is to read and extract the most important information related to the topic and then try to write about it using some content writing tools. \n\nYou can use an english rewrite tool like [https://app.peppertype.ai/create/content-rewriter](https://app.peppertype.ai/create/content-rewriter) to rewrite the content for you. These tools are 50-70% accurate, so you will have to pay attention on what this tool outputs.      \n\nAfter a strong understanding of the chosen topic, you will be able to write a guide or an article using these tools within 2-4 hours.\n\n### Pick Easy Tasks\nWe always need more content, and sometimes the topics can be difficult or outside of your area of expertise. \n\nIf you find yourself in this situation, please let us know and we will assign you a different topic. This will help save you and the reviewer time, and more importantly maintain a good working relationship.\n\n### Referral Rewards\n\n\n### Choose Verticals \n",
       "name": "Useful Tips",
       "stepItems": [],
       "uuid": "8a8b737e-373f-4fab-896b-feb2f03e737d"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi",
-  "uuid": "715ceee4-8695-46e7-b029-8a447c5ef945"
+  "uuid": "dodao-rules-tips-dodao"
 }
