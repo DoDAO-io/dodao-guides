@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T15:29:52.241Z'
+created: '2022-11-01T15:30:49.634Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -247,6 +247,18 @@ steps:
       frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
       style="position: absolute; top: 0; left: 0; width: 100%; height:
       100%;"></iframe></div>
+
+      <br/>
+
+      <br/>
+
+      <br/>
+
+      <br/>
+
+      <br/>
+
+      <br/>
     name: Creating Pull Requests
     stepItems: []
     uuid: 2db1093a-c953-44a3-b6bd-aa1ea119e952

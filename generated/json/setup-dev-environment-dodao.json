@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-11-01T15:29:52.241Z",
+  "created": "2022-11-01T15:30:49.634Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -38,7 +38,7 @@
       "uuid": "29ef76da-25a5-4ee9-bd99-38b6e0c67b21"
     },
     {
-      "content": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0;\"><iframe src=\"https://www.loom.com/embed/2de7bae66bd94d36834df18e8e85cc90\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>",
+      "content": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0;\"><iframe src=\"https://www.loom.com/embed/2de7bae66bd94d36834df18e8e85cc90\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>",
       "name": "Creating Pull Requests",
       "stepItems": [],
       "uuid": "2db1093a-c953-44a3-b6bd-aa1ea119e952"
