@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T14:16:07.571Z'
+created: '2022-11-01T14:19:15.187Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -35,8 +35,10 @@ steps:
     name: Pre-requisites
     stepItems: []
     uuid: ab430e9e-fca3-4961-9f38-081c5bcd960a
-  - content: >+
-      ### Guide Repository Structure
+  - content: >
+      Any of the guides repositories like
+      [https://github.com/DoDAO-io/dodao-academy-guides](https://github.com/DoDAO-io/dodao-academy-guides)
+      have the following structure.
 
       ```
 
@@ -89,12 +91,15 @@ steps:
       2. All the files under `generated` directory are the files generated from
       the yaml files after we run `yarn test`
 
-      3. 
+      3. Files under `generated/json` are used by the app to render guides in
+      the browser
 
+      4. Files under `generated/markdown` can be used by you to check the
+      formatting of the content
 
-      ### Course Repository Structure
-
-    name: Content
+      5. Before you create a pull request, make sure to run `yarn test` and also
+      checkin the generated files.
+    name: Guide Repo Structure
     stepItems: []
     uuid: 605385c5-b709-4170-b429-40604557717c
 thumbnail: >-

@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-11-01T14:16:07.571Z",
+  "created": "2022-11-01T14:19:15.187Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -26,8 +26,8 @@
       "uuid": "ab430e9e-fca3-4961-9f38-081c5bcd960a"
     },
     {
-      "content": "### Guide Repository Structure\n```\n|--- LICENSE\n|--- README.md\n|--- aa.txt\n|--- generated\n|     |--- json\n|     |     |--- guide-file-1.json\n|     |     |--- guide-file-2.json\n|     |     |--- guides.json\n|     |--- markdown\n|         |--- guide-file-1.md\n|         |--- guide-file-1.md\n|--- package.json\n|--- src\n|     |--- guide-file-1.yaml\n|     |--- guide-file-2.yaml\n|     |--- guides-footer.md\n|     |--- guides-header.md\n|     |--- guides.yaml\n|--- yarn.lock\n\n```\nImportant things to keep in mind are \n1. All the content to be added or updated needs to be written in `yaml` files i.e. under `src` directory\n2. All the files under `generated` directory are the files generated from the yaml files after we run `yarn test`\n3. \n\n### Course Repository Structure\n\n",
-      "name": "Content",
+      "content": "Any of the guides repositories like [https://github.com/DoDAO-io/dodao-academy-guides](https://github.com/DoDAO-io/dodao-academy-guides) have the following structure.\n```\n|--- LICENSE\n|--- README.md\n|--- aa.txt\n|--- generated\n|     |--- json\n|     |     |--- guide-file-1.json\n|     |     |--- guide-file-2.json\n|     |     |--- guides.json\n|     |--- markdown\n|         |--- guide-file-1.md\n|         |--- guide-file-1.md\n|--- package.json\n|--- src\n|     |--- guide-file-1.yaml\n|     |--- guide-file-2.yaml\n|     |--- guides-footer.md\n|     |--- guides-header.md\n|     |--- guides.yaml\n|--- yarn.lock\n\n```\nImportant things to keep in mind are \n1. All the content to be added or updated needs to be written in `yaml` files i.e. under `src` directory\n2. All the files under `generated` directory are the files generated from the yaml files after we run `yarn test`\n3. Files under `generated/json` are used by the app to render guides in the browser\n4. Files under `generated/markdown` can be used by you to check the formatting of the content\n5. Before you create a pull request, make sure to run `yarn test` and also checkin the generated files.\n",
+      "name": "Guide Repo Structure",
       "stepItems": [],
       "uuid": "605385c5-b709-4170-b429-40604557717c"
     }
