@@ -1,6 +1,7 @@
-categories: []
+categories:
+  - governance
 content: New Guide
-created: '2022-11-01T13:18:29.748Z'
+created: '2022-11-01T13:21:09.658Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -122,6 +123,16 @@ steps:
     name: Useful Tips
     stepItems: []
     uuid: 8a8b737e-373f-4fab-896b-feb2f03e737d
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Your Name
+        required: true
+        type: PublicShortInput
+        uuid: 05228654-8312-4dd1-8843-2da510b35910
+      - type: UserDiscordConnect
+        uuid: b940bf10-7e6e-4462-923e-cef523eb8efa
+    uuid: 27b2f2a9-8eb1-4231-a911-8e2693af48f0
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi
 uuid: dodao-rules-tips-dodao
