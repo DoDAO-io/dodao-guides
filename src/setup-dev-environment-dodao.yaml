@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T15:50:34.899Z'
+created: '2022-11-01T16:00:44.565Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -73,8 +73,6 @@ steps:
       |--- LICENSE
 
       |--- README.md
-
-      |--- aa.txt
 
       |--- generated
 
