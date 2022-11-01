@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T15:37:48.078Z'
+created: '2022-11-01T15:40:03.159Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -283,6 +283,16 @@ steps:
     name: Creating Pull Requests
     stepItems: []
     uuid: 2db1093a-c953-44a3-b6bd-aa1ea119e952
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Your Name
+        required: true
+        type: PublicShortInput
+        uuid: ac478ff1-7ba1-4253-b0dd-31e5f1d87fca
+      - type: UserDiscordConnect
+        uuid: 341f4cbb-96e2-44be-925b-d1d98227c134
+    uuid: 8d5a084b-7bed-4580-889c-f3f7b091fca8
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi
 uuid: setup-dev-environment-dodao
