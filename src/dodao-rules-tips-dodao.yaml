@@ -1,6 +1,6 @@
 categories: []
 content: New Guide
-created: '2022-11-01T12:55:27.336Z'
+created: '2022-11-01T12:59:32.740Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -27,7 +27,7 @@ steps:
     name: Important Rules
     stepItems: []
     uuid: ea302528-84e3-4355-a2c1-5e5a6f7e29eb
-  - content: >
+  - content: >-
       ### Content Rewrite
 
       As a smart tech-team, we want to spend most of our time understanding the
@@ -47,6 +47,10 @@ steps:
       write a guide or an article using these tools within 2-4 hours.
 
 
+      We have a paid subscription of PepperType and can give you free access if
+      you want.
+
+
       ### Pick Easy Tasks
 
       We always need more content, and sometimes the topics can be difficult or
@@ -60,9 +64,18 @@ steps:
 
       ### Referral Rewards
 
+      We're on the lookout for more fabulous interns and content writers! If you
+      know anyone who might be a good fit, be sure to let us know so we can
+      check them out. 
 
 
-      ### Choose Verticals 
+      As a little incentive, we're offering monetary rewards to anyone who
+      refers a quality candidate that ultimately contribute to the project. 
+
+
+      So if you think you know someone we should meet, please don't hesitate to
+      put them in touch with us or pass along their information. For more
+      information, just ask a member of our team.
     name: Useful Tips
     stepItems: []
     uuid: 8a8b737e-373f-4fab-896b-feb2f03e737d
