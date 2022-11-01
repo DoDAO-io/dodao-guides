@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T15:33:49.826Z'
+created: '2022-11-01T15:37:48.078Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -264,6 +264,22 @@ steps:
       <br/>
 
       <br/>
+
+
+      Few things to keep in mind
+
+      1. Setup ssh keys in github as explained here
+      https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account. 
+      This will allow you to commit and push your commits
+
+      2. Make sure you have access to the main repository to be able to create a
+      new branch and commit to it. If you don't have access, contact a team
+      member.
+
+      3. Make sure you run `yarn test` and also commit the generated files
+
+      4. After you create a pull request in github, make sure there are no merge
+      conflicts
     name: Creating Pull Requests
     stepItems: []
     uuid: 2db1093a-c953-44a3-b6bd-aa1ea119e952
