@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T14:08:06.567Z'
+created: '2022-11-01T14:16:07.571Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -35,31 +35,61 @@ steps:
     name: Pre-requisites
     stepItems: []
     uuid: ab430e9e-fca3-4961-9f38-081c5bcd960a
-  - content: |+
+  - content: >+
       ### Guide Repository Structure
+
       ```
+
       |--- LICENSE
+
       |--- README.md
+
       |--- aa.txt
+
       |--- generated
+
       |     |--- json
-      |     |       |--- guide-file-1.json
-      |     |       |--- guide-file-2.json
-      |     |       |--- guides.json
+
+      |     |     |--- guide-file-1.json
+
+      |     |     |--- guide-file-2.json
+
+      |     |     |--- guides.json
+
       |     |--- markdown
-      |            |--- guide-file-1.md
-      |            |--- guide-file-1.md
+
+      |         |--- guide-file-1.md
+
+      |         |--- guide-file-1.md
+
       |--- package.json
+
       |--- src
+
       |     |--- guide-file-1.yaml
+
       |     |--- guide-file-2.yaml
+
       |     |--- guides-footer.md
+
       |     |--- guides-header.md
+
       |     |--- guides.yaml
+
       |--- yarn.lock
 
 
       ```
+
+      Important things to keep in mind are 
+
+      1. All the content to be added or updated needs to be written in `yaml`
+      files i.e. under `src` directory
+
+      2. All the files under `generated` directory are the files generated from
+      the yaml files after we run `yarn test`
+
+      3. 
 
 
       ### Course Repository Structure
