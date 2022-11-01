@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T15:05:49.567Z'
+created: '2022-11-01T15:06:54.449Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -203,7 +203,7 @@ steps:
       have modified and allows you to checkin the code from the code editor
       itself.
 
-      2. **Yaml* - Yaml files follow a particular format and the plugin
+      2. **Yaml** - Yaml files follow a particular format and the plugin
       highlights the code in different colours making it very easy for you to
       add or update the content.
 

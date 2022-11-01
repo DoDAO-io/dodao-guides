@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-11-01T15:05:49.567Z",
+  "created": "2022-11-01T15:06:54.449Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -32,7 +32,7 @@
       "uuid": "e8951921-87e4-444c-b199-820e9012241a"
     },
     {
-      "content": "To edit the Yaml files use a code editor. We recommend https://code.visualstudio.com\n\nInstall the following plugins in your code editor\n1. **Git** - This plugin can make it easy for you to see which files you have modified and allows you to checkin the code from the code editor itself.\n2. **Yaml* - Yaml files follow a particular format and the plugin highlights the code in different colours making it very easy for you to add or update the content.\n3. **Markdown** - We process the yaml files and then generate the metadata in markdown format. By installing markdown viewer, you can check the formatting of the markdown files. For guides and courses both, we generate markdown files, which you can open in the markdown viewer and check the formatting\n\n",
+      "content": "To edit the Yaml files use a code editor. We recommend https://code.visualstudio.com\n\nInstall the following plugins in your code editor\n1. **Git** - This plugin can make it easy for you to see which files you have modified and allows you to checkin the code from the code editor itself.\n2. **Yaml** - Yaml files follow a particular format and the plugin highlights the code in different colours making it very easy for you to add or update the content.\n3. **Markdown** - We process the yaml files and then generate the metadata in markdown format. By installing markdown viewer, you can check the formatting of the markdown files. For guides and courses both, we generate markdown files, which you can open in the markdown viewer and check the formatting\n\n",
       "name": "Setup Your Editor",
       "stepItems": [],
       "uuid": "29ef76da-25a5-4ee9-bd99-38b6e0c67b21"
