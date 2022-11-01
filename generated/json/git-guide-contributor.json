@@ -4,24 +4,25 @@
     "engineering"
   ],
   "content": "Explains writing git bases guide",
-  "created": "2022-08-09T01:19:51.168Z",
+  "created": "2022-11-01T10:55:00.922Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
   "guideType": "onboarding",
   "key": "git-guide-contributor",
   "name": "Write a Git Guide",
-  "showIncorrectOnCompletion": true,
   "publishStatus": "Live",
-  "socialShareImage": null,
-  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
-  "uuid": "edae8e5e-2be6-4043-8756-a10e4933762c",
+  "showIncorrectOnCompletion": true,
   "steps": [
     {
       "content": "We have two ways of writing the guides\n1. Through the UI\n2. Through Git\n\nGit options provides a couple of benefits\n1. Review's can be done via PRs\n2. People across the project can for the repository and contribute\n3. Content is backed-up\n4. Content is Open Source and can be used by everyone\n",
-      "stepItems": [],
       "name": "Why another course?",
+      "stepItems": [],
       "uuid": "28ecec15-4497-4658-8ac6-8c02a500090a"
     },
     {
       "content": "",
+      "name": "Evaluation",
       "stepItems": [
         {
           "answerKeys": [
@@ -52,17 +53,17 @@
           "uuid": "a3f779f5-8420-4ec1-91eb-0cf17ddeeb2a"
         }
       ],
-      "name": "Evaluation",
       "uuid": "ac782028-5570-4ee2-8e4e-cd68882010ff"
     },
     {
       "content": "When adding a new guide you will have to add a new YAML file in `src` directory.\n\nWe then need to add the entry of that file in `guides.yaml` file. \n\ne.g. see this repository [https://github.com/DoDAO-io/dodao-aave-guides](https://github.com/DoDAO-io/dodao-aave-guides)\n\nWe add guide files in yaml format. The reason we use YAML format is because it is easier to write a YAML as compared to JSON. Also, YAML provides easy way to work with multi-line strings.\n\nWith-in the course YAML files, we have content field for step and stepItems. This field can contain multi-line strings. The contents of these multi-line strings can be in Markdown format.\n\nIf you are willing to contribute, it is very important that you understand the basics of YAML and Markdown format\n\n## Learn YAML\nYou can go through these tutorials or watch any of the youtube videos on YAML\n\n[https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)\n\n[https://www.tutorialspoint.com/yaml/index.htm](https://www.tutorialspoint.com/yaml/index.htm)\n\n## Learn Markdown\nYou can go through these articles or watch any of the youtube videos on Markdown\n\n[https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)\n\n## Setup\nUse a proper IDE that can validate yaml file and also that shows markdown in view format.\n",
-      "stepItems": [],
       "name": "Guide Files",
+      "stepItems": [],
       "uuid": "196a8b34-e8cd-4ca7-9b65-6444fac37156"
     },
     {
       "content": "",
+      "name": "Evaluation",
       "stepItems": [
         {
           "answerKeys": [
@@ -117,17 +118,17 @@
           "uuid": "029b80d4-a5a8-44e8-ac8d-a883e3637079"
         }
       ],
-      "name": "Evaluation",
       "uuid": "e7db8297-dd7f-4600-9b4c-86a2dd740562"
     },
     {
-      "content": "A Guide consists of following things\n1) Basic Info - This includes name, excerpt, thumbnail,  etc.\n2) Steps - Here is the example of the step\n   ```yaml\n     - uuid: bd8f0b48-4e61-478a-b275-68e3c93db760\n       content: |\n         We have two ways of writing the guides\n          1. Through the UI\n          2. Through Git\n       stepItems: []\n       name: Contributing\n   ```\n   Steps consist of following information\n   1) UUID - unique identifier. You can use this site to generate a V4 uuid https://www.uuidgenerator.net/version4\n   2) Name\n   3) Content - Details that are rendered below the headings. This is a string formatted with markdown\n   4) StepItems - Step items can be of the following types\n      1) Question - Type of question can be `MultipleChoice` or `SingleChoice`\n            ```yaml\n               - uuid: f12c2758-858d-4fe4-9560-f4dd9454f89a\n                 content: What two tasks are currently part of the work involved for a chapter\n                 of a course?\n                 type: MultipleChoice\n                 answerKeys:\n                 - B\n                 - C\n                 choices:\n                 - content: Create a youtube video\n                   key: A\n                 - content: Create yaml file with readings and summaries\n                   key: B\n                 - content: Create yaml file for questions\n                   key: C\n                 - content: Create a mind map\n                   key: D\n            ```\n      2) UserInput - This is used to capture information from user. Type can be `PublicShortInput` or `PrivateShortInput` e.g.\n            ```yaml\n                    - uuid: 5e025ae8-daf2-4074-8e6c-68de05d3e5cc\n                      label: Name\n                      required: true\n                      type: PublicShortInput\n            ```\n      3) Discord - This step item is used to ask user to connect their discord. e.g.\n        ```yaml\n           - uuid: 0d3bf837-e661-43b3-ba85-6d2ebb272be5\n             type: UserDiscordConnect\n        ```\n\n## Creating/Updating a Guide\n\nWe can edit our files directly on the GitHub website or do it locally by cloning the repository. However, cloning is usually best because then the \nchanges can be saved locally on your machine. If the GitHub tab gets refreshed while editing, any unsaved changes will be lost, so editing directly \non the website is not preferable.\n\nI prefer to use Github Desktop for committing changes to files because it is easier to implement. However, we will need to download both [GitHub Desktop]\n(https://desktop.github.com/) and the [vscode](https://code.visualstudio.com/download) editor for this purpose. While this can also be done with the \nsecure shell protocol, it is much more complicated than the other method. If you want to learn more about ssh keys, you can visit \n[here.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)\n\n**Setting up the editor. **\t\n\nWe need to set up vscode for editing and testing. We need to install node js and yarn for testing. For installing Nodejs [click this](https://nodejs.org/en/download/). \nAfter installing, for standard vscode setup, visit [vscode setup](https://code.visualstudio.com/docs/setup/setup-overview). After this setup, go to settings and enable \nterminal. Now in the terminal, run the command npm -g install yarn. Now we need to install extensions for committing changes in the file. the extensions are [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml), \n[code runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner), and [markdown preamble](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-yaml-preamble). After installing, we must sign in \nto the GitHub account in the vscode to commit changes and create pull requests.\n\n**Committing changes and creating pull requests**\n\nFor committing changes, we need to go to the repository in GitHub and click on code. Now click open with Github desktop it runs the app and initializes the repository locally, \nso there is no risk of losing the work as the editing is entirely offline. Now click on the current batch and create a new branch for committing changes after creating that, click \nopen with vscode. Now in that code editor makes changes and test the file.For testing the file run yarn (only for first time) and then run yarn test . Solve the errors shown as JSON in the terminal. \nAfter changes have been made,open GitHub desktop, give the summary and publish the branch, which will create a new pull request in the repository.\n",
-      "stepItems": [],
+      "content": "A Guide consists of following things\n1) Basic Info - This includes name, excerpt, thumbnail,  etc.\n2) Steps - Here is the example of the step\n   ```yaml\n     - uuid: bd8f0b48-4e61-478a-b275-68e3c93db760\n       content: |\n         We have two ways of writing the guides\n          1. Through the UI\n          2. Through Git\n       stepItems: []\n       name: Contributing\n   ```\n   Steps consist of following information\n   1) UUID - unique identifier. You can use this site to generate a V4 uuid https://www.uuidgenerator.net/version4\n   2) Name\n   3) Content - Details that are rendered below the headings. This is a string formatted with markdown\n   4) StepItems - Step items can be of the following types\n      1) Question - Type of question can be `MultipleChoice` or `SingleChoice`\n            ```yaml\n               - uuid: f12c2758-858d-4fe4-9560-f4dd9454f89a\n                 content: What two tasks are currently part of the work involved for a chapter\n                 of a course?\n                 type: MultipleChoice\n                 answerKeys:\n                 - B\n                 - C\n                 choices:\n                 - content: Create a youtube video\n                   key: A\n                 - content: Create yaml file with readings and summaries\n                   key: B\n                 - content: Create yaml file for questions\n                   key: C\n                 - content: Create a mind map\n                   key: D\n            ```\n      2) UserInput - This is used to capture information from user. Type can be `PublicShortInput` or `PrivateShortInput` e.g.\n            ```yaml\n                    - uuid: 5e025ae8-daf2-4074-8e6c-68de05d3e5cc\n                      label: Name\n                      required: true\n                      type: PublicShortInput\n            ```\n      3) Discord - This step item is used to ask user to connect their discord. e.g.\n        ```yaml\n           - uuid: 0d3bf837-e661-43b3-ba85-6d2ebb272be5\n             type: UserDiscordConnect\n        ```\n\n## Creating/Updating a Guide\nWhen creating or editing a guide, create a new branch and after you are done with editing the guide create a PR\n",
       "name": "Guide contents",
+      "stepItems": [],
       "uuid": "3eff00c5-7b99-4100-ad6e-5ad9c900c739"
     },
     {
       "content": "",
+      "name": "Evaluation",
       "stepItems": [
         {
           "answerKeys": [
@@ -186,37 +187,38 @@
           "uuid": "6c7ddc09-1e0a-4528-ab65-313a9e13378e"
         }
       ],
-      "name": "Evaluation",
       "uuid": "d259a962-b739-4df7-810e-51e6c807422f"
     },
     {
       "content": "Create an account on Trello as we use that for task management [https://trello.com](https://trello.com)",
+      "name": "Your Info",
       "stepItems": [
         {
-          "uuid": "5e025ae8-daf2-4074-8e6c-68de05d3e5cc",
           "label": "Name",
           "required": true,
-          "type": "PublicShortInput"
+          "type": "PublicShortInput",
+          "uuid": "5e025ae8-daf2-4074-8e6c-68de05d3e5cc"
         },
         {
-          "uuid": "0de9f39c-acb1-4835-8f8c-75ba0e22ffad",
           "label": "Trello Username",
           "required": true,
-          "type": "PublicShortInput"
+          "type": "PublicShortInput",
+          "uuid": "0de9f39c-acb1-4835-8f8c-75ba0e22ffad"
         },
         {
-          "uuid": "54f694d3-da65-4137-83a1-c8ae2e6b0e16",
           "label": "Github Username",
           "required": true,
-          "type": "PublicShortInput"
+          "type": "PublicShortInput",
+          "uuid": "54f694d3-da65-4137-83a1-c8ae2e6b0e16"
         },
         {
-          "uuid": "0d3bf837-e661-43b3-ba85-6d2ebb272be5",
-          "type": "UserDiscordConnect"
+          "type": "UserDiscordConnect",
+          "uuid": "0d3bf837-e661-43b3-ba85-6d2ebb272be5"
         }
       ],
-      "name": "Your Info",
       "uuid": "4ea13235-65e1-4169-aeb8-a28bf7306716"
     }
-  ]
+  ],
+  "thumbnail": "ipfs://QmNd8S5Z9T8cWv95UUjn5fYR1wU8nLWjeHzXoRC5oVcVe8",
+  "uuid": "git-guide-contributor"
 }
