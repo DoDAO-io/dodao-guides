@@ -31,6 +31,28 @@ steps:
 
 
       ### Pre-requisites
+
+      #### Learn YAML
+
+      You can go through these tutorials or watch any of the youtube videos on YAML
+      
+      
+      [https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)
+      
+      
+      [https://www.tutorialspoint.com/yaml/index.htm](https://www.tutorialspoint.com/yaml/index.htm)
+      
+      
+      #### Learn Markdown
+ 
+      You can go through these articles or watch any of the youtube videos on Markdown
+      
+      [https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)
+
+      #### Setup
+      
+      Use a proper IDE that can validate yaml file and also that shows markdown in view format.  
+
     name: Introduction
     stepItems: []
     uuid: aebdc966-5f62-4668-899c-9725c828741d
