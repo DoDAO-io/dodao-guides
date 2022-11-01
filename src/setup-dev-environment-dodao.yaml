@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T15:05:20.670Z'
+created: '2022-11-01T15:05:49.567Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -10,7 +10,7 @@ name: Setup Dev Environment
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >
+  - content: >-
       ### Type of Content
 
       In DoDAO we primarily write three type of contents
@@ -28,13 +28,12 @@ steps:
       is by editing the files in git repositories and then creating a pull
       request for reviews. This way, we can review the content that you write
       and make sure it meets our standards.
+
+
+      ### Pre-requisites
     name: Introduction
     stepItems: []
     uuid: aebdc966-5f62-4668-899c-9725c828741d
-  - content: 'There are some pre-requisitis to be able to contribute effectively '
-    name: Pre-requisites
-    stepItems: []
-    uuid: ab430e9e-fca3-4961-9f38-081c5bcd960a
   - content: >
       Any of the guides repositories like
       [https://github.com/DoDAO-io/dodao-academy-guides](https://github.com/DoDAO-io/dodao-academy-guides)
