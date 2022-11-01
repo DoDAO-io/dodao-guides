@@ -1,7 +1,7 @@
 categories:
   - governance
 content: Some rules and tips that will help you contribute in DoDAO
-created: '2022-11-01T15:39:11.077Z'
+created: '2022-11-01T15:59:55.351Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -14,13 +14,15 @@ steps:
       ### Copy-Paste
 
       It is a violation of copyright law to copy text or explanations and use
-      them as your own. If you are caught plagiarizing, you will be removed from
-      the team.
+      them as your own. If you are caught copy-pasting the content, you will be
+      removed from the team. In some cases we might have to capture the facts
+      and in those case we need to add a link to the original article etc.
 
 
-      You can use an english rewrite tool like
-      https://app.peppertype.ai/create/content-rewriter to rewrite the content
-      for you.
+      Writing can be quite daunting, but we have tools that can reduce 50% of
+      the work for you. You can use an english rewrite tool like
+      https://app.peppertype.ai/create/content-rewriter to rewrite the content.
+      More explained on the next step
 
 
       ### Communicate Availability
