@@ -154,7 +154,30 @@ A Guide consists of following things
         ```
 
 ## Creating/Updating a Guide
-When creating or editing a guide, create a new branch and after you are done with editing the guide create a PR
+
+We can edit our files directly on the GitHub website or do it locally by cloning the repository. However, cloning is usually best because then the 
+changes can be saved locally on your machine. If the GitHub tab gets refreshed while editing, any unsaved changes will be lost, so editing directly 
+on the website is not preferable.
+
+I prefer to use Github Desktop for committing changes to files because it is easier to implement. However, we will need to download both [GitHub Desktop]
+(https://desktop.github.com/) and the [vscode](https://code.visualstudio.com/download) editor for this purpose. While this can also be done with the 
+secure shell protocol, it is much more complicated than the other method. If you want to learn more about ssh keys, you can visit 
+[here.](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
+
+**Setting up the editor. **	
+
+We need to set up vscode for editing and testing. We need to install node js and yarn for testing. For installing Nodejs [click this](https://nodejs.org/en/download/). 
+After installing, for standard vscode setup, visit [vscode setup](https://code.visualstudio.com/docs/setup/setup-overview). After this setup, go to settings and enable 
+terminal. Now in the terminal, run the command npm -g install yarn. Now we need to install extensions for committing changes in the file. the extensions are [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml), 
+[code runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner), and [markdown preamble](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-yaml-preamble). After installing, we must sign in 
+to the GitHub account in the vscode to commit changes and create pull requests.
+
+**Committing changes and creating pull requests**
+
+For committing changes, we need to go to the repository in GitHub and click on code. Now click open with Github desktop it runs the app and initializes the repository locally, 
+so there is no risk of losing the work as the editing is entirely offline. Now click on the current batch and create a new branch for committing changes after creating that, click 
+open with vscode. Now in that code editor makes changes and test the file.For testing the file run yarn (only for first time) and then run yarn test . Solve the errors shown as JSON in the terminal. 
+After changes have been made,open GitHub desktop, give the summary and publish the branch, which will create a new pull request in the repository.
 
 
     
