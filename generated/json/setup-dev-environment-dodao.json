@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-11-01T12:38:12.446Z",
+  "created": "2022-11-01T14:04:28.327Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -14,18 +14,24 @@
   "showIncorrectOnCompletion": true,
   "steps": [
     {
-      "content": "In DoDAO we primarily write three type of contents\n1. Guides\n2. Courses\n3. Articles\n\n## Contributing to guides and courses\nThe preferred way of contributing towards creating or updating guides or courses is by editing the files in git repositories and then creating a pull request for reviews\n\n\n",
+      "content": "### Type of Content\nIn DoDAO we primarily write three type of contents\n1. Guides\n2. Courses\n3. Articles\n\n### Contributing to guides and courses\nThe best way to contribute towards creating or updating guides or courses is by editing the files in git repositories and then creating a pull request for reviews. This way, we can review the content that you write and make sure it meets our standards.\n",
       "name": "Introduction",
       "stepItems": [],
       "uuid": "aebdc966-5f62-4668-899c-9725c828741d"
     },
     {
-      "content": "",
-      "name": "Introduction Evaluation",
+      "content": "There are some pre-requisitis to be able to contribute effectively ",
+      "name": "Pre-requisites",
       "stepItems": [],
       "uuid": "ab430e9e-fca3-4961-9f38-081c5bcd960a"
+    },
+    {
+      "content": "### Guide Repository Structure\n├── LICENSE\n├── README.md\n├── aa.txt\n├── generated\n│     ├── json\n│     │     ├── guide-file-1.json\n│     │     ├── guide-file-2.json\n│     │     └── guides.json\n│     └── markdown\n│         ├── guide-file-1.md\n│         └── guide-file-1.md\n├── package.json\n├── src\n│     ├── guide-file-1.yaml\n│     ├── guide-file-2.yaml\n│     ├── guides-footer.md\n│     ├── guides-header.md\n│     └── guides.yaml\n└── yarn.lock\n\n\n\n### Course Repository Structure\n\n",
+      "name": "Content",
+      "stepItems": [],
+      "uuid": "605385c5-b709-4170-b429-40604557717c"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi",
-  "uuid": "92ffd1cc-fda7-4656-883b-f347bb84a9b3"
+  "uuid": "setup-dev-environment-dodao"
 }

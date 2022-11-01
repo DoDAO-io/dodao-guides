@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T12:38:12.446Z'
+created: '2022-11-01T14:04:28.327Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -10,7 +10,9 @@ name: Setup Dev Environment
 publishStatus: Live
 showIncorrectOnCompletion: true
 steps:
-  - content: >+
+  - content: >
+      ### Type of Content
+
       In DoDAO we primarily write three type of contents
 
       1. Guides
@@ -20,20 +22,48 @@ steps:
       3. Articles
 
 
-      ## Contributing to guides and courses
+      ### Contributing to guides and courses
 
-      The preferred way of contributing towards creating or updating guides or
-      courses is by editing the files in git repositories and then creating a
-      pull request for reviews
-
-
+      The best way to contribute towards creating or updating guides or courses
+      is by editing the files in git repositories and then creating a pull
+      request for reviews. This way, we can review the content that you write
+      and make sure it meets our standards.
     name: Introduction
     stepItems: []
     uuid: aebdc966-5f62-4668-899c-9725c828741d
-  - content: ''
-    name: Introduction Evaluation
+  - content: 'There are some pre-requisitis to be able to contribute effectively '
+    name: Pre-requisites
     stepItems: []
     uuid: ab430e9e-fca3-4961-9f38-081c5bcd960a
+  - content: |+
+      ### Guide Repository Structure
+      ├── LICENSE
+      ├── README.md
+      ├── aa.txt
+      ├── generated
+      │     ├── json
+      │     │     ├── guide-file-1.json
+      │     │     ├── guide-file-2.json
+      │     │     └── guides.json
+      │     └── markdown
+      │         ├── guide-file-1.md
+      │         └── guide-file-1.md
+      ├── package.json
+      ├── src
+      │     ├── guide-file-1.yaml
+      │     ├── guide-file-2.yaml
+      │     ├── guides-footer.md
+      │     ├── guides-header.md
+      │     └── guides.yaml
+      └── yarn.lock
+
+
+
+      ### Course Repository Structure
+
+    name: Content
+    stepItems: []
+    uuid: 605385c5-b709-4170-b429-40604557717c
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi
-uuid: 92ffd1cc-fda7-4656-883b-f347bb84a9b3
+uuid: setup-dev-environment-dodao
