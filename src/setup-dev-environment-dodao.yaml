@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T15:30:49.634Z'
+created: '2022-11-01T15:33:49.826Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -49,12 +49,17 @@ steps:
       You can go through these articles or watch any of the youtube videos on
       Markdown
 
+
       [https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)
 
-      #### Setup
 
-      Use a proper IDE that can validate yaml file and also that shows markdown
-      in view format.  
+      #### Learn Git
+
+      You can go through this tutorial or watch any of the youtube videos on
+      YAML
+
+
+      https://www.youtube.com/watch?v=tRZGeaHPoaw
     name: Introduction
     stepItems: []
     uuid: aebdc966-5f62-4668-899c-9725c828741d
