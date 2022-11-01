@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-11-01T14:04:28.327Z",
+  "created": "2022-11-01T14:08:06.567Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -26,7 +26,7 @@
       "uuid": "ab430e9e-fca3-4961-9f38-081c5bcd960a"
     },
     {
-      "content": "### Guide Repository Structure\n├── LICENSE\n├── README.md\n├── aa.txt\n├── generated\n│     ├── json\n│     │     ├── guide-file-1.json\n│     │     ├── guide-file-2.json\n│     │     └── guides.json\n│     └── markdown\n│         ├── guide-file-1.md\n│         └── guide-file-1.md\n├── package.json\n├── src\n│     ├── guide-file-1.yaml\n│     ├── guide-file-2.yaml\n│     ├── guides-footer.md\n│     ├── guides-header.md\n│     └── guides.yaml\n└── yarn.lock\n\n\n\n### Course Repository Structure\n\n",
+      "content": "### Guide Repository Structure\n```\n|--- LICENSE\n|--- README.md\n|--- aa.txt\n|--- generated\n|     |--- json\n|     |       |--- guide-file-1.json\n|     |       |--- guide-file-2.json\n|     |       |--- guides.json\n|     |--- markdown\n|            |--- guide-file-1.md\n|            |--- guide-file-1.md\n|--- package.json\n|--- src\n|     |--- guide-file-1.yaml\n|     |--- guide-file-2.yaml\n|     |--- guides-footer.md\n|     |--- guides-header.md\n|     |--- guides.yaml\n|--- yarn.lock\n\n\n```\n\n\n### Course Repository Structure\n\n",
       "name": "Content",
       "stepItems": [],
       "uuid": "605385c5-b709-4170-b429-40604557717c"

@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T14:04:28.327Z'
+created: '2022-11-01T14:08:06.567Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -37,26 +37,29 @@ steps:
     uuid: ab430e9e-fca3-4961-9f38-081c5bcd960a
   - content: |+
       ### Guide Repository Structure
-      ├── LICENSE
-      ├── README.md
-      ├── aa.txt
-      ├── generated
-      │     ├── json
-      │     │     ├── guide-file-1.json
-      │     │     ├── guide-file-2.json
-      │     │     └── guides.json
-      │     └── markdown
-      │         ├── guide-file-1.md
-      │         └── guide-file-1.md
-      ├── package.json
-      ├── src
-      │     ├── guide-file-1.yaml
-      │     ├── guide-file-2.yaml
-      │     ├── guides-footer.md
-      │     ├── guides-header.md
-      │     └── guides.yaml
-      └── yarn.lock
+      ```
+      |--- LICENSE
+      |--- README.md
+      |--- aa.txt
+      |--- generated
+      |     |--- json
+      |     |       |--- guide-file-1.json
+      |     |       |--- guide-file-2.json
+      |     |       |--- guides.json
+      |     |--- markdown
+      |            |--- guide-file-1.md
+      |            |--- guide-file-1.md
+      |--- package.json
+      |--- src
+      |     |--- guide-file-1.yaml
+      |     |--- guide-file-2.yaml
+      |     |--- guides-footer.md
+      |     |--- guides-header.md
+      |     |--- guides.yaml
+      |--- yarn.lock
 
+
+      ```
 
 
       ### Course Repository Structure
