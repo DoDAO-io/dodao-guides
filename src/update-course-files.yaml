@@ -1,0 +1,482 @@
+categories:
+  - developer
+  - engineering
+content: Explains how to update yaml files
+created: '2022-11-01T10:55:34.251Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: how-to
+key: update-course-files
+name: Update Course Files
+postSubmissionStepContent: >-
+  Look at some of the current courses at
+
+
+  [https://github.com/DoDAO-io/dodao-defi-course](https://github.com/DoDAO-io/dodao-defi-course)
+
+
+  [https://github.com/DoDAO-io/dodao-solidity-course](https://github.com/DoDAO-io/dodao-solidity-course)
+
+
+  [https://github.com/DoDAO-io/dodao-rust-course](https://github.com/DoDAO-io/dodao-rust-course)
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: >
+      ## Course Files
+
+      Our basic courses will consist of 6-10 chapters and in each chapter we
+      will cover
+
+
+      1. Readings - we call it readings, but this is the list of videos one can
+      watch on Youtube to know about the topic. We should capture max of 3-4
+      videos for each chapter.
+
+      2. Summaries - This is a list of sub-topics in a chapter which we will
+      summarize. Intent is the user can revise each and every concept in the
+      chapter by going through the bullet points. Please look at "Two Minute
+      Drill" sections in SCJP book
+      ([https://firozstar.tripod.com/_darksiderg.pdf](https://firozstar.tripod.com/_darksiderg.pdf))
+
+      3. Questions - About 50 high quality single or multiple choice questions
+      for each chapter. We want to write max 2-3 true/false questions. Almost in
+      all cases the question should have at least 4 choices.
+
+
+      We add course files in yaml format. The reason we use YAML format is
+      because it is easier to write a YAML as compared to JSON.
+
+      Also, YAML provides easy way to work with multi-line strings.
+
+
+      With-in the course YAML files, we have `content`, `details` or `summary`
+      fields. These fields can contain multi-line strings. The
+
+      contents of these multi-line strings can be in Markdown format.
+
+
+      So the outer structure of the files are in YAML format, but `content`,
+      `details` or `summary` fields are read and rendered as markdown content.
+
+
+      If you are willing to contribute, it is very important that you understand
+      the basics of YAML and Markdown format
+
+
+      ## Learn YAML
+
+      You can go through these tutorials or watch any of the youtube videos on
+      YAML
+
+
+      [https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)
+
+
+      [https://www.tutorialspoint.com/yaml/index.htm](https://www.tutorialspoint.com/yaml/index.htm)
+
+
+      ## Learn Markdown
+
+      You can go through these articles or watch any of the youtube videos on
+      Markdown
+
+
+      [https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)
+
+
+      ## Setup
+
+      Use a proper IDE that can validate yaml file and also that shows markdown
+      in view format.
+    name: Basics
+    stepItems: []
+    uuid: 5379ebb5-601d-49bc-bdbb-4df514e4ebfc
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 26e3eede
+        choices:
+          - content: We just use YAML format
+            key: 43ddbd4d
+          - content: >-
+              File is on YAML format and the some of the fields can be
+              represented as multi-line Markdown string
+            key: 26e3eede
+          - content: Files are in JSON format
+            key: 547f15a1
+          - content: >-
+              File is on Markdown format and the some of the fields can be
+              represented as multi-line YAML string
+            key: 5a85e90d
+        content: 'What markup language/s do we use for writing course files? '
+        type: SingleChoice
+        uuid: e23ff6f1-fc48-42f2-a859-f34278201b31
+      - answerKeys:
+          - e6e5d49d
+        choices:
+          - content: YAML files are auto validated
+            key: e5a846b0
+          - content: YAML is easy to use in JavaScript
+            key: 3cf4d827
+          - content: YAML is easier to learn than JSON
+            key: db4192ba
+          - content: It is easier to represent multi-line strings in YAML format
+            key: e6e5d49d
+        content: What is the main reason to use YAML files for course files?
+        type: SingleChoice
+        uuid: cf10ab5a-bea7-42e7-89b6-4d3fe2995046
+    uuid: a16ec8c5-326f-4c5a-ba21-c7771a83b764
+  - content: >-
+      ## `src` folder
+
+      All our course files are present in the src folder. We read these files to
+      generate course in markdown and in JSON
+
+      format.
+
+
+      ## `course.yaml`
+
+      `course.yaml` is the main file that contains the course title, summary,
+      description and details of all the chapters.
+
+
+      ```yaml
+
+      title: DeFi 101 Course  # This is the title of the course
+
+      key: defi-course  # A unique key/identifier for the course
+
+      summary: This is a DeFi 101 Course # A multiline string that summarizes
+      the course. This should be one paragraph about the course
+
+      details:  |   # A multiline string that captures the details of the
+      course. This should be one page about the course
+        Decentralised Finance (DeFi) is the upcoming revolution in the world which would result in 
+        the complete transformation in the functioning of the finance sector using blockchain technology as its core.  
+      duration: 45 - 60 mins
+
+      topics:  # Topics field is an array/list field that consists of all the
+      chapters of the course. 
+        - title: What is DeFi and Use Cases # Title of the topic/chapter
+          key: what-is-defi # A unique key/identifier for the topic/chapter
+          details: | # A multiline string explaining every thing that is covered in this chapter
+            This chapter explains basics of DeFi, How its different from Traditional Finance, and Use Cases
+      
+            Details
+              * What is DeFi 
+              * CeFi vs DeFi
+              * Use cases of DeFi
+          readings: blockchain_basics.yaml # name of the file in `src/readings` folder that corresponds to the readings for this chapter
+          summaries: blockchain_basics.yaml # name of the file in `src/summaries` folder that corresponds to the summaries for this chapter
+          questions: blockchain_basics.yaml # name of the file in `src/summaries` folder that corresponds to the questions for this chapter
+          status: In Progress # Status -> Not Started, In Progress, or Completed
+          completionWeek:  July 18 # In which week can we expect this chapter to be completed
+      ```
+    name: course.yaml
+    stepItems: []
+    uuid: 13785f23-1d98-464f-871a-45d98513ac57
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 5eb5b2a4
+        choices:
+          - content: Bullet points about each of the chapter
+            key: a21eb370
+          - content: One pager explaining about the course
+            key: 5eb5b2a4
+          - content: Two lines about the course
+            key: b6a8a1ad
+          - content: All the links that we referred to for creating this course
+            key: db7700c7
+        content: What should go into details field corresponding to the course
+        type: SingleChoice
+        uuid: a76fc570-8c81-45bf-a80d-ed07fa3407a9
+      - answerKeys:
+          - '81131427'
+        choices:
+          - content: Bullet points about what is covered in the chapter
+            key: '81131427'
+          - content: One pager explaining about the course
+            key: 56df15e3
+          - content: All the links that we referred to for creating this chapter
+            key: fd9b4406
+          - content: There is no details field on the topic/chapter level
+            key: e829caa5
+        content: What should go into details field corresponding to the topic/chapter
+        type: SingleChoice
+        uuid: e5438569-8a84-4f6b-a723-56a7a37c35f3
+    uuid: 7b00c984-ef94-499c-8a15-2deae82a07bc
+  - content: >
+      These files are present in the `src/summaries` folder.
+
+
+      This is a list of sub-topics in a chapter which we will summarize. Intent
+      is that the user can revise each and every concept
+
+      in the chapter by going through the bullet points. Please look at "Two
+      Minute Drill" sections in SCJP
+
+      book
+      ([https://firozstar.tripod.com/_darksiderg.pdf](https://firozstar.tripod.com/_darksiderg.pdf))
+
+
+      Wrap the content with ` ```[lang] ` (three backticks with language name)
+      if you are writing a multiline code string. Do add the lang
+
+      as our UI and github has syntax highlighting.
+
+
+      So for rust code wrap with ` ```rust `
+
+
+      So for solidity code wrap with ` ```solidity `
+
+
+      You don't need to add lang when closing the code snippet.
+
+
+      ```yaml
+
+      - title: Value Types # Title of the Sub Topic
+        shortTitle: Value Types # A short title which is shown in left nav bar on the UI
+        key: value-types # A unique key/identifier for the course
+        details: | # details is the bullet points which summarize the Sub Topic. It is a multi-line string in Markdown format
+          The following types are called value types because variables of these types will always be passed by value, i.e. unlike reference types they are always copied when used in function arguments or asssignments.
+          - Booleans
+            * They are declared using the keyword `bool`.
+            * The possible values are constants true and false.
+
+          - Integers
+            * They are declared using keywords `int` , `uint` for signed and unsigned integers.
+            * Keywords `uint8` to `uint256` in steps of 8 are used to store unsigned integers with varying sizes in bits. Similarly , `int8` to `int256` for signed integers.
+            * For Example, uint32 is a 32 bit unsigned integer having range from 0 to $2^{32}-1$ whearas int32 is a 32 bit signed integer having range from $-2^{31}$ to $2^{31}-1$.
+            * For an integer type X, you can use `type(X).min` and `type(X).max` to access the minimum and maximum value representable by the type.
+            * Integers allow the use of comparision (<=, <, ==, !=, >=, >) , bit (&, |, ^ , ~) , arithmetic (+, -, *, /, %, ** ) and shift (<< , >>) operators.
+            * `x << y` is equivalent to the mathematical expression $x * 2^y$. `x >> y` is equivalent to the mathematical expression $x / 2^y$.
+
+      ```
+    name: Summaries File
+    stepItems: []
+    uuid: 0c556352-6202-4e30-a007-167d8fa78e60
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - e22c8ce6
+        choices:
+          - content: A multi-line JSON
+            key: 859d3a14
+          - content: A multi-line Markdown
+            key: e22c8ce6
+          - content: A multi-line YAML
+            key: a82a0e97
+          - content: Its a single line sting
+            key: b7ccbbe8
+        content: Contents of the `details` field are in what format
+        type: SingleChoice
+        uuid: c1e0b40a-ad42-495e-8edf-2ae16ea81f69
+    uuid: baa4f55a-2ba2-4b92-9d83-6f20b936137d
+  - content: >-
+      These files are present in the `src/readings` folder.
+
+
+      We refer to Youtube video or an Article/Link as reading. Reading file
+      consist of list of readings.
+
+
+      Each reading is represented in the following format
+
+
+      ```yaml
+
+      - uuid: a150cd2d-1888-4210-8bee-9411eb25e3bf # uuid Needs to be a random
+      UUID - You can generate it from https://www.uuidgenerator.net/version4. 
+      Use version 4
+        title: Introduction to Solidity Data types # Title of the video. This doesn't need to match the youtube video title
+        shortTitle: Data Types Intro - 1 # A short title which is shown in left nav bar on the UI
+        type: YoutubeVideo # Type can be YoutubeVideo or Article
+        url: https://www.youtube.com/watch?v=N1Jeeei_wtw  # URL of the video or article
+        subTopics:  # List of sub-topics from summaries about which this video is
+          - "value-types"
+          - "reference-types"
+          - "mapping-type"
+        details: | # Here we share in our own words what this video is all about
+          In this video we're looking at the data types available in Solidity.
+          This video explains about the use of -
+          * Value Types - Integers , Booleans etc 
+          * Reference Types - Structs , Arrays .
+          * Mapping Type - Mapping.
+      ```
+    name: Readings File
+    stepItems: []
+    uuid: e538de44-6007-4626-bd38-387227ea4a0f
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 1a577c91
+        choices:
+          - content: For subtitles of the video
+            key: 51fb2a0a
+          - content: To summarize what will a user learn after going through the video
+            key: 1a577c91
+          - content: >-
+              It's a detailed description which explains each and everything
+              talked about in the video
+            key: d2c20852
+        content: What do we use the details field of readings for?
+        type: SingleChoice
+        uuid: 28d5fe4f-49e9-49ed-9502-848f2acc049b
+      - answerKeys:
+          - 6f1e3c73
+        choices:
+          - content: 'with ```[lang] where lang is rust, solidity, yarml '
+            key: 6f1e3c73
+          - content: with ` (single backtick)
+            key: 6dbdb7bf
+          - content: with < pre >< code > </ code > < pre >
+            key: 264cfdd9
+        content: If we add a multiline code, how should we wrap it
+        type: SingleChoice
+        uuid: 3ccee04d-f37c-4eba-86b0-3386e1229c1a
+    uuid: e115a2cf-e877-4767-8596-5e9648df6a37
+  - content: >-
+      Questions should be written in the following format
+
+
+      Wrap the content with ` ```[lang] ` (three backticks with language name)
+      if you are writing a multiline code string. Do add the lang
+
+      as our UI and github has syntax highlighting.
+
+
+      So for rust code wrap with ` ```rust `
+
+
+      So for solidity code wrap with ` ```solidity `
+
+
+      You don't need to add lang when closing the code snippet.
+
+
+      Wrap the content with ` (single backtick) if you are writing some single
+      line keyword or code
+
+      ```yaml
+
+      - uuid: a2bc4929-787b-4184-959c-480659493663
+        type: SingleChoice # Types can be MultipleChoice or SingleChoice
+        content: | # Content should be in Markdown format. Can be a multiline string
+          In the following code snippet which line will result in an error-
+            ```
+            // SPDX-License-Identifier: MIT
+            pragma solidity ^0.8.10;
+            contract C {
+
+                //line 1
+                uint public x = 1;
+
+                // line 2
+                function addToX(uint y) public pure returns (uint) {
+                    return x + y;
+                }
+
+                // line 3
+                function add(uint i, uint j) public pure returns (uint) {
+                    return i + j;
+                }
+            }
+          ```
+        hint: Check whether the function declaration is correct. # Hint for the user. Use NoHint "only" if you feel the question is too simple
+        explanation: | 
+          Pure declares that no state variable will be changed or read in a function. view tells us that by running the 
+          function, no data will be saved/changed. Here in line 2 a pure function is trying to read the data from a state 
+          variable. The declaration should have a view instead of pure.
+        answerKeys:
+          - B
+        subTopics: # List of sub-topics from summaries about which this video is
+          - "value-types"
+        difficultyLevel: Low # Difficulty level should be one option from "Low" , "Medium", "High"
+        choices:
+          - content: Line 1 # Content should be in Markdown format
+            key: A
+          - content: Line 2
+            key: B
+          - content: Line 3
+            key: C
+          - content: The code snippet will not give any error
+            key: D
+      ```
+    name: Questions
+    stepItems: []
+    uuid: 05fa1b03-1316-4d29-b4b1-956954f277b0
+  - content: >-
+      ## Validation
+
+
+      Run `yarn test` in the course folder to see if the changes you have done
+      are correct.
+
+
+      Also check the generated markdown format in the view format.
+
+
+      ## commit
+
+      Create a new branch in the same main repository and create a pull request.
+
+
+      You can create a pull request as soon as you start on the task with
+      whatever you have. This
+
+      allows other person to do an early review of in-progress work which can
+      save your time.
+    name: Validation & Submission
+    stepItems: []
+    uuid: 4a7c0fbf-b40d-4b7d-b88d-ddae398b76b0
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 2c5d1110
+        choices:
+          - content: We don't use pull requests
+            key: 82f0e66b
+          - content: Create the PR only after completion of the work
+            key: caac302e
+          - content: No need to creating the PR. You can commit to main branch
+            key: a57766eb
+          - content: >-
+              Create a PR as soon as you start working on the chapter or other
+              changes
+            key: 2c5d1110
+        content: 'When is it recommended to create a PR for code review '
+        type: SingleChoice
+        uuid: 57e3f236-007f-457d-8b5e-2af755c316b5
+    uuid: 56ad94d8-f8c4-4c08-b2da-9931b529e6f7
+  - content: >-
+      Create an account on Trello as we use that for task management
+      [https://trello.com](https://trello.com)
+    name: Your Info
+    stepItems:
+      - label: Name
+        required: true
+        type: PublicShortInput
+        uuid: da993718-8414-4786-8024-05260950ec30
+      - label: Trello Username
+        required: true
+        type: PublicShortInput
+        uuid: cbf93daf-a506-45ee-ba76-b09556986d72
+      - label: Github Username
+        required: true
+        type: PublicShortInput
+        uuid: 13829af8-185e-440c-806a-6b5f5d0aae4a
+      - type: UserDiscordConnect
+        uuid: 2f88ed32-4fc4-419f-ac62-f2c8cd0f66b5
+    uuid: 1f8f86ab-87ae-4975-88d1-c9ea5a6c678b
+thumbnail: ipfs://QmXVyHKbwuu9vgoBgdy8Bj3m3d1DeJ6pkf9Vrop89hjVr2
+uuid: update-course-files

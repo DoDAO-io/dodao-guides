@@ -1,3 +1,6 @@
 guides:
+  - about-dodao.yaml
   - git-guide-contributor.yaml
+  - course-contributor.yaml
+  - update-course-files.yaml
 
