@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T14:19:15.187Z'
+created: '2022-11-01T14:55:28.162Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -102,6 +102,45 @@ steps:
     name: Guide Repo Structure
     stepItems: []
     uuid: 605385c5-b709-4170-b429-40604557717c
+  - content: |-
+      ```
+      .
+      |--- LICENSE
+      |--- README.md
+      |--- aa.txt
+      |--- generated
+      |   |--- course.json
+      |   |--- explanations
+      |   |      |--- aave-smart-contracts.md
+      |   |--- questions
+      |   |      |--- aave-smart-contracts.md
+      |   |--- readings
+      |   |      |--- aave-smart-contracts.md
+      |   |--- summaries
+      |   |      |--- aave-smart-contracts.md
+      |   |--- topics
+      |          |--- aave-smart-contracts.md
+      |--- images
+      |   |--- aave.jpg
+      |   |--- architechture.png
+      |--- package-lock.json
+      |--- package.json
+      |--- src
+      |   |--- course-header.md
+      |   |--- course.yaml
+      |   |--- explanations
+      |   |      |--- aave-smart-contracts.yaml
+      |   |--- questions
+      |   |      |--- aave-smart-contracts.yaml
+      |   |--- readings
+      |   |      |--- aave-smart-contracts.yaml
+      |   |--- summaries
+      |          |--- aave-smart-contracts.yaml
+      |--- yarn.lock
+      ```
+    name: Course Repo Structure
+    stepItems: []
+    uuid: e8951921-87e4-444c-b199-820e9012241a
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi
 uuid: setup-dev-environment-dodao

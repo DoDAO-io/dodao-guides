@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-11-01T14:19:15.187Z",
+  "created": "2022-11-01T14:55:28.162Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -30,6 +30,12 @@
       "name": "Guide Repo Structure",
       "stepItems": [],
       "uuid": "605385c5-b709-4170-b429-40604557717c"
+    },
+    {
+      "content": "```\n.\n|--- LICENSE\n|--- README.md\n|--- aa.txt\n|--- generated\n|   |--- course.json\n|   |--- explanations\n|   |      |--- aave-smart-contracts.md\n|   |--- questions\n|   |      |--- aave-smart-contracts.md\n|   |--- readings\n|   |      |--- aave-smart-contracts.md\n|   |--- summaries\n|   |      |--- aave-smart-contracts.md\n|   |--- topics\n|          |--- aave-smart-contracts.md\n|--- images\n|   |--- aave.jpg\n|   |--- architechture.png\n|--- package-lock.json\n|--- package.json\n|--- src\n|   |--- course-header.md\n|   |--- course.yaml\n|   |--- explanations\n|   |      |--- aave-smart-contracts.yaml\n|   |--- questions\n|   |      |--- aave-smart-contracts.yaml\n|   |--- readings\n|   |      |--- aave-smart-contracts.yaml\n|   |--- summaries\n|          |--- aave-smart-contracts.yaml\n|--- yarn.lock\n```",
+      "name": "Course Repo Structure",
+      "stepItems": [],
+      "uuid": "e8951921-87e4-444c-b199-820e9012241a"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi",
