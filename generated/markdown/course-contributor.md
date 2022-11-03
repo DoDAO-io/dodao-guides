@@ -87,6 +87,7 @@ Our basic courses will consist of 6-10 chapters and in each chapter we will cove
 1. Readings - we call it readings, but this is the list of videos one can watch on Youtube to know about the topic. We should capture max of 3-4 videos for each chapter.
 2. Summaries - This is a list of sub-topics in a chapter which we will summarize. Intent is the user can revise each and every concept in the chapter by going through the bullet points. Please look at "Two Minute Drill" sections in SCJP book ([https://firozstar.tripod.com/_darksiderg.pdf](https://firozstar.tripod.com/_darksiderg.pdf)) 
 3. Questions - About 50 high quality single or multiple choice questions for each chapter. We want to write max 2-3 true/false questions. Almost in all cases the question should have at least 4 choices.
+4. Explanation - This is a detailed description of the topic. This part explains  all of the important information related to the topic. The user can get all the  necessary information from this part, which will be around 3-4 paragraphs. This section  will provide an in-depth analysis of the topic at hand, and afterwards, the reader should  have a much better understanding of the subject matter.
 
     
 

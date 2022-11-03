@@ -27,9 +27,41 @@ You can go through these tutorials or watch any of the youtube videos on YAML
 
 #### Learn Markdown
 You can go through these articles or watch any of the youtube videos on Markdown
+
 [https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)
-#### Setup
-Use a proper IDE that can validate yaml file and also that shows markdown in view format.  
+
+#### Learn Git
+You can go through this tutorial or watch any of the youtube videos on YAML
+
+https://www.youtube.com/watch?v=tRZGeaHPoaw
+
+    
+
+
+---
+## Evaluation
+
+
+
+
+
+##### What are the prerequisites for contributing to the courses?  
+
+- [ ]  Markdown and YAML
+- [x]  YAMl, Markdown and Git
+- [ ]  Git and Markdown
+- [ ]  None of these
+
+
+
+
+
+##### What are the primarily contents we write in DoDao?  
+
+- [ ]  Only Courses
+- [ ]  Articles and Guides
+- [x]  Guides, Courses and Articles
+- [ ]  Codes for DeFi
 
     
 
@@ -41,7 +73,6 @@ Any of the guides repositories like [https://github.com/DoDAO-io/dodao-academy-g
 ```
 |--- LICENSE
 |--- README.md
-|--- aa.txt
 |--- generated
 |     |--- json
 |     |     |--- guide-file-1.json
@@ -72,13 +103,51 @@ Important things to keep in mind are
 
 
 ---
+## Evaluation
+
+
+
+
+
+##### Courses and Guides are written in which format?  
+
+- [ ]  Markdown format
+- [ ]  HTML format
+- [ ]  Json format
+- [x]  YAML Format
+
+
+
+
+
+##### What must be done before creating a pull request?  
+
+- [ ]  Run `node guides.js `
+- [ ]  Include MIT license in the license directory
+- [x]  Run `yarn test` successfully and do a check in generated markdown files
+- [ ]  Run `yaml test` and correct the errors
+
+
+
+
+
+##### Which directory's files need to be modified for guides?  
+
+- [x]  src
+- [ ]  generated
+- [ ]  generated/json
+- [ ]  package.json
+
+    
+
+
+---
 ## Course Repo Structure
 
 ```
 .
 |--- LICENSE
 |--- README.md
-|--- aa.txt
 |--- generated
 |   |--- course.json
 |   |--- explanations
@@ -122,6 +191,45 @@ Important things to keep in mind are
 
 
 ---
+## Evaluation
+
+
+
+
+
+##### The summary should be added to which directory?  
+
+- [ ]  src/explanations
+- [x]  src/summaries
+- [ ]  src/questions
+- [ ]  src/readings
+
+
+
+
+
+##### What are some important things that should be taken care of after editing the files?  
+
+- [x]  Make sure to update the different uuid's for the added files
+- [ ]  Use different subtopics for all the 4 files
+- [x]  Make sure the file name is same in all the four folders(explanations,summaries,questions, readings)
+- [ ]  Change the compiler version in the package.json file
+
+
+
+
+
+##### Where you can find the generated markdown files?  
+
+- [ ]  It will be in package.json
+- [ ]  It will be in course.json
+- [x]  It will be in the generated directory
+- [ ]  It can be viewed in Dodao.io
+
+    
+
+
+---
 ## Setup Your Editor
 
 To edit the Yaml files use a code editor. We recommend https://code.visualstudio.com
@@ -137,7 +245,114 @@ Install the following plugins in your code editor
 
 
 ---
+## Evaluation
+
+
+
+
+
+##### What is the preferred editor for editing YAML files?  
+
+- [ ]  Sublime text
+- [x]  Visual studio code
+- [ ]  Notepad++
+- [ ]  Dev c++
+
+
+
+
+
+##### Which essential plugins and packages need to be installed?  
+
+- [ ]  Github desktop and python plugins should be installed
+- [ ]  Only git and YAML is enough. Npm package manager should be installed
+- [x]  Git, YAML and markdown plugins. Yarn package should be installed
+- [ ]  Node js must be installed
+
+
+
+
+
+##### What plugin may be used to highlight keywords in yaml files?  
+
+- [ ]  coderunner plugin
+- [ ]  git extension
+- [x]  YAML extension
+- [ ]  markdown extension
+
+    
+
+
+---
 ## Creating Pull Requests
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/2de7bae66bd94d36834df18e8e85cc90" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+Few things to keep in mind
+1. Setup ssh keys in github as explained here https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account.  This will allow you to commit and push your commits
+2. Make sure you have access to the main repository to be able to create a new branch and commit to it. If you don't have access, contact a team member.
+3. Make sure you run `yarn test` and also commit the generated files
+4. After you create a pull request in github, make sure there are no merge conflicts
+
+    
+
+
+---
+## Evaluation
+
+
+
+
+
+##### What has to be configured for push and pull commits?  
+
+- [x]  Set up ssh keys in github
+- [ ]  Set up trello account
+- [ ]  Setup hypertext terminal
+- [ ]  Login the vscode with github account
+
+
+
+
+
+##### Prior to making a pull request, what should be done?  
+
+- [x]  Create a new branch and add the changes in the new branch
+- [ ]  Make changes in the main branch
+- [x]  Make sure that the pr has no merge conflicts
+- [ ]  Add the ssh keys in the end of the yaml file
+
+
+
+
+
+##### What should you do if you don't have access to create a new branch?  
+
+- [ ]  Contact Ethereum community
+- [ ]  Fork the repository and create a new branch
+- [ ]  Get authorisation from github by mail
+- [x]  Contact a team member
+
+    
+
+
+---
+## Your Info
+
+
+
+
+
+| Label | Type | Required |
+| ----------- | ----------- | ---- |
+| Your Name        | PublicShortInput   |  true    |
+
 
 
 
