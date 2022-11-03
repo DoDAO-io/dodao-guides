@@ -127,7 +127,7 @@ steps:
             key: A
           - content: Quantity is the top priority
             key: B
-          - content: Minimum 6 lines code is necesaary
+          - content: Minimum 6 lines code is necessary
             key: C
           - content: More images must be added to the content
             key: D

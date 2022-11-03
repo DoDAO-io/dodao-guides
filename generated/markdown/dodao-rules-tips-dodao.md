@@ -78,7 +78,7 @@ Whenever you receive payments from us in cryptocurrency, we recommend that you t
 
 - [x]  Quality is the top priority
 - [ ]  Quantity is the top priority
-- [ ]  Minimum 6 lines code is necesaary
+- [ ]  Minimum 6 lines code is necessary
 - [ ]  More images must be added to the content
 
     
