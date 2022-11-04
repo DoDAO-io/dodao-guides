@@ -17,31 +17,432 @@
       "content": "### Type of Content\nIn DoDAO we primarily write three type of contents\n1. Guides\n2. Courses\n3. Articles\n\n### Contributing to guides and courses\nThe best way to contribute towards creating or updating guides or courses is by editing the files in git repositories and then creating a pull request for reviews. This way, we can review the content that you write and make sure it meets our standards.\n\n### Pre-requisites\n#### Learn YAML\nYou can go through these tutorials or watch any of the youtube videos on YAML\n\n[https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)\n\n[https://www.tutorialspoint.com/yaml/index.htm](https://www.tutorialspoint.com/yaml/index.htm)\n\n#### Learn Markdown\nYou can go through these articles or watch any of the youtube videos on Markdown\n\n[https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)\n\n#### Learn Git\nYou can go through this tutorial or watch any of the youtube videos on YAML\n\nhttps://www.youtube.com/watch?v=tRZGeaHPoaw",
       "name": "Introduction",
       "stepItems": [],
+      "uuid": "ee5e5b86-36d5-4f1b-9b66-03998cb9f30f"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "B"
+          ],
+          "choices": [
+            {
+              "content": "Markdown and YAML",
+              "key": "A"
+            },
+            {
+              "content": "YAMl, Markdown and Git",
+              "key": "B"
+            },
+            {
+              "content": "Git and Markdown",
+              "key": "C"
+            },
+            {
+              "content": "None of these",
+              "key": "D"
+            }
+          ],
+          "content": "What are the prerequisites for contributing to the courses?",
+          "type": "SingleChoice",
+          "uuid": "def54f10-e8fd-4946-ad94-a0b1cfb13319"
+        },
+        {
+          "answerKeys": [
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "Only Courses",
+              "key": "A"
+            },
+            {
+              "content": "Articles and Guides",
+              "key": "B"
+            },
+            {
+              "content": "Guides, Courses and Articles",
+              "key": "C"
+            },
+            {
+              "content": "Codes for DeFi",
+              "key": "D"
+            }
+          ],
+          "content": "What are the primarily contents we write in DoDao?",
+          "type": "SingleChoice",
+          "uuid": "52551657-ba99-4851-8e64-4438bf956caf"
+        }
+      ],
       "uuid": "aebdc966-5f62-4668-899c-9725c828741d"
     },
     {
       "content": "Any of the guides repositories like [https://github.com/DoDAO-io/dodao-academy-guides](https://github.com/DoDAO-io/dodao-academy-guides) have the following structure.\n```\n|--- LICENSE\n|--- README.md\n|--- generated\n|     |--- json\n|     |     |--- guide-file-1.json\n|     |     |--- guide-file-2.json\n|     |     |--- guides.json\n|     |--- markdown\n|         |--- guide-file-1.md\n|         |--- guide-file-1.md\n|--- package.json\n|--- src\n|     |--- guide-file-1.yaml\n|     |--- guide-file-2.yaml\n|     |--- guides-footer.md\n|     |--- guides-header.md\n|     |--- guides.yaml\n|--- yarn.lock\n\n```\nImportant things to keep in mind are \n1. All the content to be added or updated needs to be written in `yaml` files i.e. under `src` directory\n2. All the files under `generated` directory are the files generated from the yaml files after we run `yarn test`\n3. Files under `generated/json` are used by the app to render guides in the browser\n4. Files under `generated/markdown` can be used by you to check the formatting of the content\n5. Before you create a pull request, make sure to run `yarn test` and also checkin the generated files.\n",
       "name": "Guide Repo Structure",
       "stepItems": [],
+      "uuid": "d4ebb275-5d54-4371-a61d-d9e0421d97f1"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "D"
+          ],
+          "choices": [
+            {
+              "content": "Markdown format",
+              "key": "A"
+            },
+            {
+              "content": "HTML format",
+              "key": "B"
+            },
+            {
+              "content": "Json format",
+              "key": "C"
+            },
+            {
+              "content": "YAML Format",
+              "key": "D"
+            }
+          ],
+          "content": "Courses and Guides are written in which format?",
+          "type": "SingleChoice",
+          "uuid": "c1ba1966-9520-4bcc-9fa8-0ee35bd489ca"
+        },
+        {
+          "answerKeys": [
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "Run `node guides.js `",
+              "key": "A"
+            },
+            {
+              "content": "Include MIT license in the license directory",
+              "key": "B"
+            },
+            {
+              "content": "Run `yarn test` successfully and do a check in generated markdown files",
+              "key": "C"
+            },
+            {
+              "content": "Run `yaml test` and correct the errors",
+              "key": "D"
+            }
+          ],
+          "content": "What must be done before creating a pull request?",
+          "type": "SingleChoice",
+          "uuid": "fe616295-7d46-4118-85ac-068447da0333"
+        },
+        {
+          "answerKeys": [
+            "A"
+          ],
+          "choices": [
+            {
+              "content": "src",
+              "key": "A"
+            },
+            {
+              "content": "generated",
+              "key": "B"
+            },
+            {
+              "content": "generated/json",
+              "key": "C"
+            },
+            {
+              "content": "package.json",
+              "key": "D"
+            }
+          ],
+          "content": "Which directory's files need to be modified for guides?",
+          "type": "SingleChoice",
+          "uuid": "42220567-e092-433b-b435-91f5ee7feb5d"
+        }
+      ],
       "uuid": "605385c5-b709-4170-b429-40604557717c"
     },
     {
       "content": "```\n.\n|--- LICENSE\n|--- README.md\n|--- generated\n|   |--- course.json\n|   |--- explanations\n|   |      |--- aave-smart-contracts.md\n|   |--- questions\n|   |      |--- aave-smart-contracts.md\n|   |--- readings\n|   |      |--- aave-smart-contracts.md\n|   |--- summaries\n|   |      |--- aave-smart-contracts.md\n|   |--- topics\n|          |--- aave-smart-contracts.md\n|--- images\n|   |--- aave.jpg\n|   |--- architechture.png\n|--- package-lock.json\n|--- package.json\n|--- src\n|   |--- course-header.md\n|   |--- course.yaml\n|   |--- explanations\n|   |      |--- aave-smart-contracts.yaml\n|   |--- questions\n|   |      |--- aave-smart-contracts.yaml\n|   |--- readings\n|   |      |--- aave-smart-contracts.yaml\n|   |--- summaries\n|          |--- aave-smart-contracts.yaml\n|--- yarn.lock\n```\n\nImportant things to keep in mind are \n1. All the content to be added or updated needs to be written in `yaml` files i.e. under `src` directory\n2. All the files under `generated` directory are the files generated from the yaml files after we run `yarn test`\n3. `generated/course.json` is used by the app to render the course in the browser\n4. Files under `generated` folder can be used by you to check the formatting of the content\n5. Before you create a pull request, make sure to run `yarn test` and also checkin the generated files.\n",
       "name": "Course Repo Structure",
       "stepItems": [],
-      "uuid": "e8951921-87e4-444c-b199-820e9012241a"
+      "uuid": "ec2e87c8-c19b-4bf1-949d-f3f5eb9ba114"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "B"
+          ],
+          "choices": [
+            {
+              "content": "src/explanations",
+              "key": "A"
+            },
+            {
+              "content": "src/summaries",
+              "key": "B"
+            },
+            {
+              "content": "src/questions",
+              "key": "C"
+            },
+            {
+              "content": "src/readings",
+              "key": "D"
+            }
+          ],
+          "content": "The summary should be added to which directory?",
+          "type": "SingleChoice",
+          "uuid": "399b9503-caee-47aa-9c6a-e2bb10fe3dc3"
+        },
+        {
+          "answerKeys": [
+            "A",
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "Make sure to update the different uuid's for the added files",
+              "key": "A"
+            },
+            {
+              "content": "Use different subtopics for all the 4 files",
+              "key": "B"
+            },
+            {
+              "content": "Make sure the file name is same in all the four folders(explanations,summaries,questions, readings)",
+              "key": "C"
+            },
+            {
+              "content": "Change the compiler version in the package.json file",
+              "key": "D"
+            }
+          ],
+          "content": "What are some important things that should be taken care of after editing the files?",
+          "type": "MultipleChoice",
+          "uuid": "be38bf39-47f0-414f-b182-7d6180e9bcb1"
+        },
+        {
+          "answerKeys": [
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "It will be in package.json",
+              "key": "A"
+            },
+            {
+              "content": "It will be in course.json",
+              "key": "B"
+            },
+            {
+              "content": "It will be in the generated directory",
+              "key": "C"
+            },
+            {
+              "content": "It can be viewed in Dodao.io",
+              "key": "D"
+            }
+          ],
+          "content": "Where you can find the generated markdown files?",
+          "type": "SingleChoice",
+          "uuid": "1f3f1c35-01c5-40f1-86cb-ee28610a0597"
+        }
+      ],
+      "uuid": "0eda62fc-de74-4db5-b1b6-23690a383a96"
     },
     {
       "content": "To edit the Yaml files use a code editor. We recommend https://code.visualstudio.com\n\nInstall the following plugins in your code editor\n1. **Git** - This plugin can make it easy for you to see which files you have modified and allows you to checkin the code from the code editor itself.\n2. **Yaml** - Yaml files follow a particular format and the plugin highlights the code in different colours making it very easy for you to add or update the content.\n3. **Markdown** - We process the yaml files and then generate the metadata in markdown format. By installing markdown viewer, you can check the formatting of the markdown files. For guides and courses both, we generate markdown files, which you can open in the markdown viewer and check the formatting\n\n",
       "name": "Setup Your Editor",
       "stepItems": [],
+      "uuid": "4d2a3529-2c95-4ced-8316-112da886ea75"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "B"
+          ],
+          "choices": [
+            {
+              "content": "Sublime text",
+              "key": "A"
+            },
+            {
+              "content": "Visual studio code",
+              "key": "B"
+            },
+            {
+              "content": "Notepad++",
+              "key": "C"
+            },
+            {
+              "content": "Dev c++",
+              "key": "D"
+            }
+          ],
+          "content": "What is the preferred editor for editing YAML files?",
+          "type": "SingleChoice",
+          "uuid": "03f9d5dd-b390-4ea3-901d-1aaf5f2dd1b6"
+        },
+        {
+          "answerKeys": [
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "Github desktop and python plugins should be installed",
+              "key": "A"
+            },
+            {
+              "content": "Only git and YAML is enough. Npm package manager should be installed",
+              "key": "B"
+            },
+            {
+              "content": "Git, YAML and markdown plugins. Yarn package should be installed",
+              "key": "C"
+            },
+            {
+              "content": "Node js must be installed",
+              "key": "D"
+            }
+          ],
+          "content": "Which essential plugins and packages need to be installed?",
+          "type": "SingleChoice",
+          "uuid": "7149dd1e-0de3-4a0e-9350-e9655744878b"
+        },
+        {
+          "answerKeys": [
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "coderunner plugin",
+              "key": "A"
+            },
+            {
+              "content": "git extension",
+              "key": "B"
+            },
+            {
+              "content": "YAML extension",
+              "key": "C"
+            },
+            {
+              "content": "markdown extension",
+              "key": "D"
+            }
+          ],
+          "content": "What plugin may be used to highlight keywords in yaml files?",
+          "type": "SingleChoice",
+          "uuid": "eea1e846-19cd-4036-95b8-22f46d059e16"
+        }
+      ],
       "uuid": "29ef76da-25a5-4ee9-bd99-38b6e0c67b21"
     },
     {
       "content": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0;\"><iframe src=\"https://www.loom.com/embed/2de7bae66bd94d36834df18e8e85cc90\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n\nFew things to keep in mind\n1. Setup ssh keys in github as explained here https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account.  This will allow you to commit and push your commits\n2. Make sure you have access to the main repository to be able to create a new branch and commit to it. If you don't have access, contact a team member.\n3. Make sure you run `yarn test` and also commit the generated files\n4. After you create a pull request in github, make sure there are no merge conflicts",
       "name": "Creating Pull Requests",
       "stepItems": [],
-      "uuid": "2db1093a-c953-44a3-b6bd-aa1ea119e952"
+      "uuid": "e0a830aa-df86-4bb2-8d32-b0aa362498b1"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "A"
+          ],
+          "choices": [
+            {
+              "content": "Set up ssh keys in github",
+              "key": "A"
+            },
+            {
+              "content": "Set up trello account",
+              "key": "B"
+            },
+            {
+              "content": "Setup hypertext terminal",
+              "key": "C"
+            },
+            {
+              "content": "Login the vscode with github account",
+              "key": "D"
+            }
+          ],
+          "content": "What has to be configured for push and pull commits?",
+          "type": "SingleChoice",
+          "uuid": "1969dcbd-ec6f-4c34-aa1b-621d10c421b5"
+        },
+        {
+          "answerKeys": [
+            "A",
+            "C"
+          ],
+          "choices": [
+            {
+              "content": "Create a new branch and add the changes in the new branch",
+              "key": "A"
+            },
+            {
+              "content": "Make changes in the main branch",
+              "key": "B"
+            },
+            {
+              "content": "Make sure that the pr has no merge conflicts",
+              "key": "C"
+            },
+            {
+              "content": "Add the ssh keys in the end of the yaml file",
+              "key": "D"
+            }
+          ],
+          "content": "Prior to making a pull request, what should be done?",
+          "type": "MultipleChoice",
+          "uuid": "5bdae23d-3cc6-4c49-8c41-d3b7b1ca9af9"
+        },
+        {
+          "answerKeys": [
+            "D"
+          ],
+          "choices": [
+            {
+              "content": "Contact Ethereum community",
+              "key": "A"
+            },
+            {
+              "content": "Fork the repository and create a new branch",
+              "key": "B"
+            },
+            {
+              "content": "Get authorisation from github by mail",
+              "key": "C"
+            },
+            {
+              "content": "Contact a team member",
+              "key": "D"
+            }
+          ],
+          "content": "What should you do if you don't have access to create a new branch?",
+          "type": "SingleChoice",
+          "uuid": "17d62dd0-eaf2-4639-b930-83abe0200177"
+        }
+      ],
+      "uuid": "ec0e08bd-37c5-4a4d-90d0-e83469e88711"
     },
     {
       "content": "",
