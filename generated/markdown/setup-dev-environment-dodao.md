@@ -98,6 +98,7 @@ Important things to keep in mind are
 4. Files under `generated/markdown` can be used by you to check the formatting of the content
 5. Before you create a pull request, make sure to run `yarn test` and also checkin the generated files.
 
+Note: If you add a new file, make sure to include it in the `src/guides.yaml`.
 
     
 
@@ -185,6 +186,8 @@ Important things to keep in mind are
 3. `generated/course.json` is used by the app to render the course in the browser
 4. Files under `generated` folder can be used by you to check the formatting of the content
 5. Before you create a pull request, make sure to run `yarn test` and also checkin the generated files.
+
+Note: If you add a new file, make sure to include it in the `src/course.yaml` file under the right topic.
 
 
     
