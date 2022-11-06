@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-11-01T16:00:44.565Z'
+created: '2022-11-06T13:06:37.116Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -95,7 +95,7 @@ steps:
         type: SingleChoice
         uuid: 52551657-ba99-4851-8e64-4438bf956caf
     uuid: aebdc966-5f62-4668-899c-9725c828741d
-  - content: >
+  - content: >-
       Any of the guides repositories like
       [https://github.com/DoDAO-io/dodao-academy-guides](https://github.com/DoDAO-io/dodao-academy-guides)
       have the following structure.
@@ -157,6 +157,10 @@ steps:
 
       5. Before you create a pull request, make sure to run `yarn test` and also
       checkin the generated files.
+
+
+      Note: If you add a new file, make sure to include it in the
+      `src/guides.yaml`.
     name: Guide Repo Structure
     stepItems: []
     uuid: d4ebb275-5d54-4371-a61d-d9e0421d97f1
@@ -184,7 +188,9 @@ steps:
             key: A
           - content: Include MIT license in the license directory
             key: B
-          - content: Run `yarn test` successfully and do a check in generated markdown files
+          - content: >-
+              Run `yarn test` successfully and do a check in generated markdown
+              files
             key: C
           - content: Run `yaml test` and correct the errors
             key: D
@@ -204,7 +210,7 @@ steps:
             key: D
         content: Which directory's files need to be modified for guides?
         type: SingleChoice
-        uuid: 42220567-e092-433b-b435-91f5ee7feb5d 
+        uuid: 42220567-e092-433b-b435-91f5ee7feb5d
     uuid: 605385c5-b709-4170-b429-40604557717c
   - content: >
       ```
@@ -292,6 +298,10 @@ steps:
 
       5. Before you create a pull request, make sure to run `yarn test` and also
       checkin the generated files.
+
+
+      Note: If you add a new file, make sure to include it in the
+      `src/course.yaml` file under the right topic.
     name: Course Repo Structure
     stepItems: []
     uuid: ec2e87c8-c19b-4bf1-949d-f3f5eb9ba114
@@ -320,17 +330,21 @@ steps:
             key: A
           - content: Use different subtopics for all the 4 files
             key: B
-          - content: Make sure the file name is same in all the four folders(explanations,summaries,questions, readings)
+          - content: >-
+              Make sure the file name is same in all the four
+              folders(explanations,summaries,questions, readings)
             key: C
-          - content: Change the compiler version in the package.json file 
+          - content: Change the compiler version in the package.json file
             key: D
-        content: What are some important things that should be taken care of after editing the files?
+        content: >-
+          What are some important things that should be taken care of after
+          editing the files?
         type: MultipleChoice
         uuid: be38bf39-47f0-414f-b182-7d6180e9bcb1
       - answerKeys:
           - C
         choices:
-          - content: It will be in package.json 
+          - content: It will be in package.json
             key: A
           - content: It will be in course.json
             key: B
@@ -388,7 +402,9 @@ steps:
         choices:
           - content: Github desktop and python plugins should be installed
             key: A
-          - content: Only git and YAML is enough. Npm package manager should be installed
+          - content: >-
+              Only git and YAML is enough. Npm package manager should be
+              installed
             key: B
           - content: Git, YAML and markdown plugins. Yarn package should be installed
             key: C
@@ -460,7 +476,7 @@ steps:
             key: A
           - content: Set up trello account
             key: B
-          - content: Setup hypertext terminal 
+          - content: Setup hypertext terminal
             key: C
           - content: Login the vscode with github account
             key: D
