@@ -3,7 +3,7 @@
     "developer"
   ],
   "content": "Setup you need to have to contribute to the guides & courses ",
-  "created": "2022-12-05T16:46:36.438Z",
+  "created": "2022-12-05T16:54:49.574Z",
   "guideIntegrations": {
     "discordRoleIds": []
   },
@@ -353,7 +353,7 @@
       "uuid": "29ef76da-25a5-4ee9-bd99-38b6e0c67b21"
     },
     {
-      "content": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0;\"><iframe src=\"https://www.loom.com/embed/2de7bae66bd94d36834df18e8e85cc90\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n\nFew things to keep in mind\n1. Setup ssh keys in github as explained here https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account.  This will allow you to commit and push your commits\n2. Make sure you have access to the main repository to be able to create a new branch and commit to it. If you don't have access, contact a team member.\n3. Make sure you run `yarn test` and also commit the generated files\n4. After you create a pull request in github, make sure there are no merge conflicts\n\n\n## Important git commands\n1. Create a new branch - `git branch <branch_name>`\n2. Checkout a branch - `git checkout <branch_name>`\n3. Create and checkout a branch in one command - `git checkout -b <branch_name>`\n4. Rollback all the local changes - `git reset --hard`\n5. Add current changes to stage \n  * For all files - `git add .` \n  * For specific file - `git add <file_path>`\n6. Commit changes after stage - `git commit -m \"<commit message>\"`\n7. Push the current branch to remote branch - `git push origin <branch_name>`\n",
+      "content": "<div style=\"position: relative; padding-bottom: 56.25%; height: 0;\"><iframe src=\"https://www.loom.com/embed/2de7bae66bd94d36834df18e8e85cc90\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n<br/>\n\nFew things to keep in mind\n1. Setup ssh keys in github as explained here https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account.  This will allow you to commit and push your commits\n2. Make sure you have access to the main repository to be able to create a new branch and commit to it. If you don't have access, contact a team member.\n3. Make sure you run `yarn test` and also commit the generated files\n4. After you create a pull request in github, make sure there are no merge conflicts\n\n\n## Important git commands\n1. Create a new branch - `git branch <branch_name>`\n2. Checkout a branch - `git checkout <branch_name>`\n3. Create and checkout a branch in one command - `git checkout -b <branch_name>`\n4. Rollback all the local changes - `git reset --hard`\n5. Add current changes to stage \n  * For all files - `git add .` \n  * For specific file - `git add <file_path>`\n6. Commit changes after stage - `git commit -m \"<commit message>\"`\n7. Push the current branch to remote branch - `git push origin <branch_name>`\n8. Check the modified files - `git status`",
       "name": "Creating Pull Requests",
       "stepItems": [],
       "uuid": "e0a830aa-df86-4bb2-8d32-b0aa362498b1"

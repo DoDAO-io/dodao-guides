@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-12-05T16:46:36.438Z'
+created: '2022-12-05T16:54:49.574Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -428,7 +428,7 @@ steps:
         type: SingleChoice
         uuid: eea1e846-19cd-4036-95b8-22f46d059e16
     uuid: 29ef76da-25a5-4ee9-bd99-38b6e0c67b21
-  - content: >
+  - content: >-
       <div style="position: relative; padding-bottom: 56.25%; height:
       0;"><iframe
       src="https://www.loom.com/embed/2de7bae66bd94d36834df18e8e85cc90"
@@ -484,6 +484,8 @@ steps:
 
       7. Push the current branch to remote branch - `git push origin
       <branch_name>`
+
+      8. Check the modified files - `git status`
     name: Creating Pull Requests
     stepItems: []
     uuid: e0a830aa-df86-4bb2-8d32-b0aa362498b1
