@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-12-05T16:46:04.181Z'
+created: '2022-12-05T16:46:36.438Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -480,7 +480,7 @@ steps:
       5. Add current changes to stage 
         * For all files - `git add .` 
         * For specific file - `git add <file_path>`
-      6. Commit changes after stage - `git commit -m "<commit message>"
+      6. Commit changes after stage - `git commit -m "<commit message>"`
 
       7. Push the current branch to remote branch - `git push origin
       <branch_name>`
