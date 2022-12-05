@@ -1,7 +1,7 @@
 categories:
   - developer
 content: 'Setup you need to have to contribute to the guides & courses '
-created: '2022-12-05T16:43:58.063Z'
+created: '2022-12-05T16:46:04.181Z'
 guideIntegrations:
   discordRoleIds: []
 guideType: onboarding
@@ -478,8 +478,12 @@ steps:
       4. Rollback all the local changes - `git reset --hard`
 
       5. Add current changes to stage 
+        * For all files - `git add .` 
+        * For specific file - `git add <file_path>`
+      6. Commit changes after stage - `git commit -m "<commit message>"
 
-      for all files - `git add .` or git
+      7. Push the current branch to remote branch - `git push origin
+      <branch_name>`
     name: Creating Pull Requests
     stepItems: []
     uuid: e0a830aa-df86-4bb2-8d32-b0aa362498b1
